@@ -1,12 +1,19 @@
 {
-  "name": "Greek Travel V10",
-  "short_name": "Greek V10",
-  "description": "Everyday Greek speaking app with practical phrases, vocabulary, phrase builder, and priority review.",
+  "name": "Greek Travel V10.3 Complete",
+  "short_name": "Greek V10.3",
+  "description": "Everyday Greek app with phrases, vocabulary, builders, listening recognition, daily practice, and honest Phrase Builder.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#f6f9ff",
   "theme_color": "#2563eb",
-  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }
