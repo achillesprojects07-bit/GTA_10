@@ -1,17 +1,14 @@
-Greek Travel V10.5.1 Expanded Play — Corrected Build
+Greek Travel V10.6.1 Clean Full Core
 
-Upload these files to GitHub repo: GTA_10
+Upload these files to GitHub:
 - index.html
-- script.js
 - manifest.json
 - service-worker.js
 - icon.svg
 
-Fixes from V10.5:
-- Corrected packaging so the expanded 400 Play Mode activities are included in the running app.
-- Updated service worker cache version and includes script.js.
-- Keeps the V10.4.6 stable click system.
-- Keeps Match Mode separate.
+This build keeps the V10.6 full 595 Play Mode target, keeps Match Mode separate, removes unused script.js packaging, cleans confusing vocabulary labels, and reduces over-repeated game answers.
+
+Navigation: Home / Speak / Vocab / Play / Match / Review
 
 Test URL after upload:
-https://achillesprojects07-bit.github.io/GTA_10/?v=1051
+https://achillesprojects07-bit.github.io/GTA_10/?v=1061

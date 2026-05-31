@@ -1,7 +1,7 @@
 {
-  "name": "Greek Travel V10.5.1 Expanded Play",
-  "short_name": "Greek V10.5.1",
-  "description": "Greek Travel V10.5.1 with 400 Play Mode activities, separate Match Mode, phrase/vocab cards, and fixed packaging.",
+  "name": "Greek Travel V10.6.1 Clean Full Core",
+  "short_name": "Greek V10.6.1",
+  "description": "Clean full core Greek travel app with 595 play activities and separate match mode.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
