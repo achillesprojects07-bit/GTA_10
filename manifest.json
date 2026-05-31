@@ -1,12 +1,19 @@
 {
-  "name": "Greek Travel V10.11.1 Phrase Builder Fix",
-  "short_name": "Greek V10.11.1",
-  "description": "Greek travel app with practical gap flashcards, 900 Play Mode activities, Travel Mode, full Match Mode coverage, and fixed Phrase Builder English copy field.",
+  "name": "Greek Travel V10.12.1 Verb Sets",
+  "short_name": "Greek V10.12.1",
+  "description": "Greek travel app with verb-set flashcards, Play Mode, Match Mode, Phrase Builder, and Priority Review.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#f6f9ff",
   "theme_color": "#2563eb",
-  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }

@@ -1,25 +1,18 @@
-Greek Travel V10.11.1 Phrase Builder Fix
+Greek Travel V10.12.1 Verb Sets
 
 Upload these files to GitHub:
 - index.html
 - manifest.json
 - service-worker.js
 - icon.svg
-- README.txt
 
-What is included:
-- 438 Speak Now phrases
-- 639 vocabulary cards
-- 900 Play Mode activities
-- Travel Mode
-- Full Match Mode coverage: 231 rounds / 1077 pairs
+New in V10.12.1:
+- 50 Useful Present + Future Verb Set flashcards
+- One verb = one flashcard
+- Each verb card includes a present tense table and useful future examples
+- Verb cards are included in Match Mode coverage
+- Stable Play Mode remains at 900 activities
+- Phrase Builder fix from V10.11.1 is retained
 
-Fix in V10.11.1:
-- Phrase Builder now has a separate blank field called “English phrase copied for saving.”
-- When you tap Open in Google Translate, the English phrase you typed is automatically copied into that save field.
-- You only need to paste the Greek result and optional pronunciation before saving.
 
-No pharmacy expansion was added.
-
-Test link after upload:
-https://achillesprojects07-bit.github.io/GTA_10/?v=10111
+V10.12.1 adds Backup / Restore for progress, XP, streak, and saved personal phrases.
