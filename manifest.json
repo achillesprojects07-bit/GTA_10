@@ -1,7 +1,7 @@
 {
-  "name": "Greek Travel V10.9 Final Travel Mode",
-  "short_name": "Greek V10.9",
-  "description": "Greek travel app with 900 Play Mode activities, 100 Match Mode rounds, and Final Travel Mode.",
+  "name": "Greek Travel V10.10 Full Match Coverage",
+  "short_name": "Greek V10.10",
+  "description": "Greek travel app with full Play Mode, Travel Mode, and full Match Mode coverage.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

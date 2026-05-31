@@ -1,4 +1,4 @@
-Greek Travel V10.9 Final Travel Mode
+Greek Travel V10.10 Full Match Coverage
 
 Upload these files to GitHub:
 - index.html
@@ -7,13 +7,12 @@ Upload these files to GitHub:
 - icon.svg
 - README.txt
 
-Clean audited build.
-
-Includes:
+What is included:
 - 338 Speak Now phrases
-- 639 Vocabulary cards
+- 639 vocabulary cards
 - 900 Play Mode activities
-- 100 Match Mode rounds / 500 pairs
-- Final Travel Mode: 7-day crash review, emergency shortcuts, formal/polite review, place words, and question builders
+- Travel Mode
+- Full Match Mode coverage: 208 rounds / 977 pairs
 
-Match Mode remains separate from Play Mode.
+Test link after upload:
+https://achillesprojects07-bit.github.io/GTA_10/?v=1010
