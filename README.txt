@@ -1,9 +1,10 @@
-Greek Travel V10.4.4 Navigation and Color Fix
+Greek Travel V10.4.6 Answer Buttons Fixed
 
 Fixes:
-- Play and Match category buttons replace the category list with the selected game immediately.
-- Back buttons return to category lists.
-- Needs Review and Mastered now color the full card more visibly.
-- Match Mode remains simplified and separate.
+- Play Mode answer choices now click/respond correctly.
+- Match Mode answer choices now click/respond correctly.
+- Builder block buttons now click/respond correctly.
+- Play/Match selected section opens directly without forcing scroll through lists.
+- Full card color status remains: Needs Review orange, Mastered gold.
 
-Upload all files to GTA_10.
+Upload all files to GitHub repo GTA_10 and test with ?v=1045.
