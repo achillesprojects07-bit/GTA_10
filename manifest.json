@@ -1,7 +1,7 @@
 {
-  "name": "Greek Travel V10.8 Maximum Practical Game",
-  "short_name": "Greek V10.8",
-  "description": "Greek travel app with 900 Play Mode activities, expanded Match Mode, flashcards, vocabulary, phrase builder, and priority review.",
+  "name": "Greek Travel V10.9 Final Travel Mode",
+  "short_name": "Greek V10.9",
+  "description": "Greek travel app with 900 Play Mode activities, 100 Match Mode rounds, and Final Travel Mode.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
