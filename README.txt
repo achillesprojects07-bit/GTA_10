@@ -1,10 +1,17 @@
-Greek Travel V10.4.6 Answer Buttons Fixed
+Greek Travel V10.5.1 Expanded Play — Corrected Build
 
-Fixes:
-- Play Mode answer choices now click/respond correctly.
-- Match Mode answer choices now click/respond correctly.
-- Builder block buttons now click/respond correctly.
-- Play/Match selected section opens directly without forcing scroll through lists.
-- Full card color status remains: Needs Review orange, Mastered gold.
+Upload these files to GitHub repo: GTA_10
+- index.html
+- script.js
+- manifest.json
+- service-worker.js
+- icon.svg
 
-Upload all files to GitHub repo GTA_10 and test with ?v=1045.
+Fixes from V10.5:
+- Corrected packaging so the expanded 400 Play Mode activities are included in the running app.
+- Updated service worker cache version and includes script.js.
+- Keeps the V10.4.6 stable click system.
+- Keeps Match Mode separate.
+
+Test URL after upload:
+https://achillesprojects07-bit.github.io/GTA_10/?v=1051

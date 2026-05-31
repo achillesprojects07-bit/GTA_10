@@ -1,7 +1,7 @@
 {
-  "name": "Greek Travel V10.4.2 Clean Game Foundation",
-  "short_name": "Greek V10.4.3.2",
-  "description": "Cleaned Greek travel app with non-redundant Play Mode, separate Match Mode, phrases, vocabulary, and priority review.",
+  "name": "Greek Travel V10.5.1 Expanded Play",
+  "short_name": "Greek V10.5.1",
+  "description": "Greek Travel V10.5.1 with 400 Play Mode activities, separate Match Mode, phrase/vocab cards, and fixed packaging.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
