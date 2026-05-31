@@ -1,7 +1,7 @@
 {
-  "name": "Greek Travel V10.7.1 Clean Advanced Everyday Expansion",
-  "short_name": "Greek V10.7.1",
-  "description": "Cleaned advanced Greek travel app with 750 Play Mode activities and 55 separate Match Mode rounds.",
+  "name": "Greek Travel V10.8 Maximum Practical Game",
+  "short_name": "Greek V10.8",
+  "description": "Greek travel app with 900 Play Mode activities, expanded Match Mode, flashcards, vocabulary, phrase builder, and priority review.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
