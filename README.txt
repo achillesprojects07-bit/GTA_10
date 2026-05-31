@@ -1,10 +1,10 @@
-Greek Travel V10.4.6 Answer Buttons Fixed
+Greek Travel V10.4.7 Answer Clicks Fixed
+
+Upload all files to GitHub repo GTA_10.
 
 Fixes:
-- Play Mode answer choices now click/respond correctly.
-- Match Mode answer choices now click/respond correctly.
-- Builder block buttons now click/respond correctly.
-- Play/Match selected section opens directly without forcing scroll through lists.
-- Full card color status remains: Needs Review orange, Mastered gold.
-
-Upload all files to GitHub repo GTA_10 and test with ?v=1045.
+- Play Mode answer options use proper event listeners and are clickable.
+- Match Mode answer options use proper event listeners and are clickable.
+- Sentence Builder blocks and Check button use proper event listeners.
+- Play and Match category views still open directly.
+- Marked cards keep full-card color states.
