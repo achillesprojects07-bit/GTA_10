@@ -1,15 +1,5 @@
-Greek Travel V10.12 Verb Sets
+Greek Travel V10.12.3 Verb Sets Cache Reset
 
-Upload these files to GitHub:
-- index.html
-- manifest.json
-- service-worker.js
-- icon.svg
+Use this only if V10.12.1 cache broke the live app. This build is based on the working V10.12 Verb Sets Clean and clears old service workers/caches.
 
-New in V10.12:
-- 50 Useful Present + Future Verb Set flashcards
-- One verb = one flashcard
-- Each verb card includes a present tense table and useful future examples
-- Verb cards are included in Match Mode coverage
-- Stable Play Mode remains at 900 activities
-- Phrase Builder fix from V10.11.1 is retained
+Upload all files to GitHub Pages and test with ?v=10123-reset.
