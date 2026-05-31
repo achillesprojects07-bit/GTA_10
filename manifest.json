@@ -1,7 +1,7 @@
 {
-  "name": "Greek Travel V10.3 Complete",
-  "short_name": "Greek V10.3",
-  "description": "Everyday Greek app with phrases, vocabulary, builders, listening recognition, daily practice, and honest Phrase Builder.",
+  "name": "Greek Travel V10.4.1 Clean Game Foundation",
+  "short_name": "Greek V10.4.1",
+  "description": "Cleaned Greek travel app with non-redundant Play Mode, separate Match Mode, phrases, vocabulary, and priority review.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
