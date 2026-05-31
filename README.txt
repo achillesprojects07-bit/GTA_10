@@ -1,14 +1,10 @@
-Greek Travel V10.4.2 UX Fixed
+Greek Travel V10.4.3 UX Fixed
 
-Fixes included:
-- Play Mode category buttons now jump directly to the selected activity area.
-- Match Mode round buttons now jump directly to the selected match round.
-- Speak/Vocab/Review cards turn colored when marked Needs Review or Mastered.
-- Match Mode has been decluttered into one flashcard prompt at a time with 4 Greek choices.
-- Match Mode remains separate from Play Mode.
+Fixes:
+- Play Mode category buttons now open the selected activity immediately and hide the category list.
+- Match Mode round buttons now open the selected round immediately and hide the round list.
+- Back buttons return to the category/round list.
+- Marked cards keep V10.3-style colors: Needs Review orange, Mastered gold, Unmarked white.
+- Match Mode stays simplified: one prompt and four choices.
 
-Upload these files to the GTA_10 GitHub repository:
-- index.html
-- manifest.json
-- service-worker.js
-- icon.svg
+Upload all files to the GTA_10 GitHub repository.
