@@ -1,4 +1,4 @@
-Greek Travel Phase 9 Verb Sets
+Greek Travel Phase 9 Priority Only Auto English
 
 Upload these files to GitHub:
 - index.html
@@ -6,15 +6,6 @@ Upload these files to GitHub:
 - service-worker.js
 - icon.svg
 
-Added:
-- Useful Present + Future Verb Sets
-- 43 new verb flashcards
-- One verb = one flashcard
-- Present tense table: I / You / He-She-It / We / You polite-plural / They
-- Useful future phrases: I will / We will / practical sentence
-
-Preserves:
-- Priority-only tracker
-- Translator
-- Paste Greek helper
-- Saved phrase log
+Fix:
+The English phrase typed in My Greek Translator now immediately auto-copies into the saved phrase English blank.
+You only need to paste the Greek translation and optional pronunciation/notes.

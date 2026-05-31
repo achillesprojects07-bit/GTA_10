@@ -1,7 +1,7 @@
 {
-  "name": "Greek Travel Phase 9 Verb Sets",
+  "name": "Greek Travel Phase 9 Priority Only",
   "short_name": "Greek Phase 9",
-  "description": "Greek travel app with priority tracker, translator, saved phrases, and useful present/future verb set flashcards.",
+  "description": "Greek travel app with priority-only tracker and immediate English auto-fill for saved phrase log.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
