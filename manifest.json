@@ -1,7 +1,7 @@
 {
-  "name": "Greek Travel V10.11 Practical Gap Expansion",
-  "short_name": "Greek V10.11",
-  "description": "Greek travel app with practical gap flashcards, 900 Play Mode activities, Travel Mode, and full Match Mode coverage.",
+  "name": "Greek Travel Phase 9 Priority Only",
+  "short_name": "Greek Phase 9",
+  "description": "Greek travel app with priority-only tracker and immediate English auto-fill for saved phrase log.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
