@@ -1,7 +1,7 @@
 {
-  "name": "GTA V10.14",
-  "short_name": "GTA V10.14",
-  "description": "Greek travel app with verb sets, practical noun patterns, expanded Play Mode, Match Mode, Phrase Builder, and Priority Review.",
+  "name": "GTA V10.14.1",
+  "short_name": "GTA V10.14.1",
+  "description": "Greek travel app with verb sets, practical noun patterns, expanded Play Mode, Match Mode, Phrase Builder, Priority Review, and Batch 1 fixes.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
