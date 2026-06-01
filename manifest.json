@@ -1,6 +1,6 @@
 {
-  "name": "GTA V10.15",
-  "short_name": "GTA V10.15",
+  "name": "GTA V10.15.1",
+  "short_name": "GTA V10.15.1",
   "description": "Greek travel app with audio starter using device Greek text-to-speech, verb sets, practical noun patterns, Play Mode, Match Mode, Phrase Builder, Priority Review, Backup/Restore, and storage safety reminders.",
   "start_url": "./index.html",
   "scope": "./",
