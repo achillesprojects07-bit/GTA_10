@@ -1,7 +1,7 @@
 {
-  "name": "GTA V10.13",
-  "short_name": "GTA V10.13",
-  "description": "Greek travel app with verb-set flashcards, Play Mode, Match Mode, Phrase Builder, and Priority Review.",
+  "name": "GTA V10.14",
+  "short_name": "GTA V10.14",
+  "description": "Greek travel app with verb sets, practical noun patterns, expanded Play Mode, Match Mode, Phrase Builder, and Priority Review.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

@@ -1,4 +1,4 @@
-GTA V10.13 Practical Noun Patterns
+GTA V10.14 Verb + Noun Pattern Play Expansion
 
 Upload these files to GitHub:
 - index.html
@@ -6,9 +6,9 @@ Upload these files to GitHub:
 - service-worker.js
 - icon.svg
 
-New in V10.13:
-- Adds 54 Practical Noun Pattern cards for declension through real-life scenarios.
-- Covers article basics, to/at/in, from, object forms, and real case scenarios.
-- Pattern cards are included in Priority Review and Match Mode.
-- Match Mode now covers 1,136 flashcard/vocabulary/verb/pattern items.
-- Stable V10.12.7 Backup / Restore retained.
+New in V10.14:
+- Keeps all V10.13 flashcards, verb sets, noun pattern cards, Match Mode, and Backup / Restore.
+- Adds 170 dedicated Verb Play activities.
+- Adds 150 dedicated Noun Pattern Play activities.
+- Play Mode now totals 1,220 activities.
+- Match Mode remains full coverage at 1,136 pairs.
