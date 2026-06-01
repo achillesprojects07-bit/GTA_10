@@ -1,4 +1,4 @@
-GTA V10.15.1 Audio Starter
+GTA V10.16 Listen Mode Clean
 
 Upload these files to GitHub:
 - index.html
@@ -6,38 +6,34 @@ Upload these files to GitHub:
 - service-worker.js
 - icon.svg
 
-Base retained from V10.14.2:
+Base retained from V10.15.1:
 - Speak, Vocabulary, Verb Sets, Practical Noun Patterns, Travel Mode, Play, Match, Phrase Builder, Backup, and Review.
-- Play Mode totals 1,220 activities.
-- Match Mode remains full coverage at 1,136 pairs.
-- Backup / Restore remains available from Home.
+- Audio buttons use browser speechSynthesis with lang=el-GR and do not fall back to English voices.
+- Backup / Restore and storage safety reminders are retained.
 
-Batch 1 fixes retained:
-- Streak only continues when the last active day was exactly yesterday.
-- Dashboard subtitle contrast improved on colored cards.
-- Phrase Builder button label corrected.
-- Backup download filename updated.
+New in V10.16:
+- Adds separate Listen Mode with 320 listening activities.
+- Listen Mode includes:
+  - Hear Greek → Choose English: 120 activities
+  - Hear Greek → Choose Greek Text: 120 activities
+  - Hear Greek Scenario → Choose Greek Response: 80 activities
+- Listen Mode uses the same installed Greek voice as the card audio.
+- Includes Play Audio and Slow buttons.
 
-Batch 2 fixes retained:
-- Home is highlighted for Home-only screens: Verb Sets, Noun Patterns, Travel Mode, Phrase Builder, Backup.
-- Orientation label added to Home-only screens.
-- showView render calls preserved.
+Counts:
+- Speak Now phrases: 438
+- Vocabulary cards: 594
+- Verb-set flashcards: 50
+- Practical Noun Pattern cards: 54
+- Play Mode activities: 1,220
+- Listen Mode activities: 320
+- Match Mode pairs: 1,136
 
-Batch 3 storage safety fixes:
-- Added device-only progress warning.
-- Added backup reminder when no backup has been saved or when the last saved backup is older than 7 days.
-- Copy Backup and Download Backup File update the last-backup timestamp.
-- Restore imports lastBackupAt when available.
-- Backup file name is gta-backup-v10-15-1.json.
+Audit notes:
+- JavaScript syntax passed.
+- Existing card renderers retained.
+- Play Mode and Match Mode click handlers retained.
+- Backup filename updated to gta-backup-v10-16.json.
 
-Fallbacks included:
-- index.v10.14.fallback.html
-- index.v10.14.1.fallback.html
-
-
-V10.15.1.1 audio starter:
-- Adds a large Hear Greek button to Speak Now, Vocabulary, Verb Sets, and Practical Noun Pattern cards.
-- Uses the browser speechSynthesis API with lang=el-GR.
-- Prefers an installed Greek voice and disables the button if no Greek voice is available.
-- Stops any in-progress speech before starting new speech.
-- No recorded audio files are required.
+Test link after upload:
+https://achillesprojects07-bit.github.io/GTA_10/?v=1016
