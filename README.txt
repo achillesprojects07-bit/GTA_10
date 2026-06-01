@@ -1,4 +1,4 @@
-GTA V10.12.7 Verb Sets
+GTA V10.13 Practical Noun Patterns
 
 Upload these files to GitHub:
 - index.html
@@ -6,13 +6,9 @@ Upload these files to GitHub:
 - service-worker.js
 - icon.svg
 
-New in V10.12.7:
-- 50 Useful Present + Future Verb Set flashcards
-- One verb = one flashcard
-- Each verb card includes a present tense table and useful future examples
-- Verb cards are included in Match Mode coverage
-- Stable Play Mode remains at 900 activities
-- Phrase Builder fix from V10.11.1 is retained
-
-
-V10.12.7: Added safe Backup / Restore for marks, XP, streak, and saved personal phrases.
+New in V10.13:
+- Adds 54 Practical Noun Pattern cards for declension through real-life scenarios.
+- Covers article basics, to/at/in, from, object forms, and real case scenarios.
+- Pattern cards are included in Priority Review and Match Mode.
+- Match Mode now covers 1,136 flashcard/vocabulary/verb/pattern items.
+- Stable V10.12.7 Backup / Restore retained.
