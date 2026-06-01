@@ -1,4 +1,4 @@
-const CACHE_NAME = 'greek-travel-v10-14-3-batch3-v1';
+const CACHE_NAME = 'greek-travel-v10-15-audio-starter-v1';
 const FILES_TO_CACHE = ['./','./index.html','./manifest.json','./icon.svg'];
 self.addEventListener('install', event => {event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(FILES_TO_CACHE))); self.skipWaiting();});
 self.addEventListener('activate', event => {event.waitUntil(caches.keys().then(keys => Promise.all(keys.map(key => key !== CACHE_NAME ? caches.delete(key) : null)))); self.clients.claim();});
