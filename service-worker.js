@@ -1,5 +1,16 @@
-const CACHE_NAME = 'greek-travel-v10-11-1-phrase-builder-fix-v1';
-const FILES_TO_CACHE = ['./','./index.html','./manifest.json','./icon.svg'];
-self.addEventListener('install', event => {event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(FILES_TO_CACHE))); self.skipWaiting();});
-self.addEventListener('activate', event => {event.waitUntil(caches.keys().then(keys => Promise.all(keys.map(key => key !== CACHE_NAME ? caches.delete(key) : null)))); self.clients.claim();});
-self.addEventListener('fetch', event => {event.respondWith(caches.match(event.request).then(response => response || fetch(event.request)));});
+// V10.12.3 cache reset service worker: clears old caches and avoids stale app shells.
+self.addEventListener('install', event => {
+  self.skipWaiting();
+  event.waitUntil(caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k)))));
+});
+self.addEventListener('activate', event => {
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    await Promise.all(keys.map(k => caches.delete(k)));
+    await self.clients.claim();
+    await self.registration.unregister();
+  })());
+});
+self.addEventListener('fetch', event => {
+  event.respondWith(fetch(event.request).catch(() => caches.match(event.request)));
+});
