@@ -1,4 +1,4 @@
-Greek Travel V10.12.5 Verb Sets
+GTA V10.12.6 Verb Sets
 
 Upload these files to GitHub:
 - index.html
@@ -6,7 +6,7 @@ Upload these files to GitHub:
 - service-worker.js
 - icon.svg
 
-New in V10.12.5:
+New in V10.12.6:
 - 50 Useful Present + Future Verb Set flashcards
 - One verb = one flashcard
 - Each verb card includes a present tense table and useful future examples
