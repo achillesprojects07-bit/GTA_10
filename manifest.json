@@ -1,7 +1,7 @@
 {
-  "name": "GTA V10.16",
-  "short_name": "GTA V10.16",
-  "description": "Greek travel app with Listen Mode, Greek text-to-speech audio, verb sets, practical noun patterns, Play Mode, Match Mode, Phrase Builder, Priority Review, Backup/Restore, and storage safety reminders.",
+  "name": "GTA V10.16.2",
+  "short_name": "GTA V10.16.2",
+  "description": "Greek travel app with Listen Feedback Improvement, Greek text-to-speech audio, verb sets, practical noun patterns, Play Mode, Match Mode, Phrase Builder, Priority Review, Backup/Restore, and storage safety reminders.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

@@ -1,4 +1,4 @@
-GTA V10.16 Listen Mode Clean
+GTA V10.16.2 Listen Feedback Improvement Clean
 
 Upload these files to GitHub:
 - index.html
@@ -6,19 +6,18 @@ Upload these files to GitHub:
 - service-worker.js
 - icon.svg
 
-Base retained from V10.15.1:
-- Speak, Vocabulary, Verb Sets, Practical Noun Patterns, Travel Mode, Play, Match, Phrase Builder, Backup, and Review.
-- Audio buttons use browser speechSynthesis with lang=el-GR and do not fall back to English voices.
-- Backup / Restore and storage safety reminders are retained.
+Base retained from V10.16.1:
+- Speak, Vocabulary, Verb Sets, Practical Noun Patterns, Travel Mode, Play, Listen, Match, Phrase Builder, Backup, and Review.
+- Listen Mode remains 680 activities.
+- Audio uses browser speechSynthesis with lang=el-GR and does not fall back to English voices.
 
-New in V10.16:
-- Adds separate Listen Mode with 320 listening activities.
-- Listen Mode includes:
-  - Hear Greek → Choose English: 120 activities
-  - Hear Greek → Choose Greek Text: 120 activities
-  - Hear Greek Scenario → Choose Greek Response: 80 activities
-- Listen Mode uses the same installed Greek voice as the card audio.
-- Includes Play Audio and Slow buttons.
+New in V10.16.2:
+- In Listen Mode, wrong answers no longer reveal the correct answer right away.
+- Wrong answers now say: Try again. Listen one more time and choose again.
+- The app replays the Greek audio after a wrong answer.
+- Correct answers reveal the Greek text plus English translation.
+- Scenario response activities reveal both: what you heard and the best response, with English translations.
+- Backup filename updated to gta-backup-v10-16-2.json.
 
 Counts:
 - Speak Now phrases: 438
@@ -26,14 +25,5 @@ Counts:
 - Verb-set flashcards: 50
 - Practical Noun Pattern cards: 54
 - Play Mode activities: 1,220
-- Listen Mode activities: 320
+- Listen Mode activities: 680
 - Match Mode pairs: 1,136
-
-Audit notes:
-- JavaScript syntax passed.
-- Existing card renderers retained.
-- Play Mode and Match Mode click handlers retained.
-- Backup filename updated to gta-backup-v10-16.json.
-
-Test link after upload:
-https://achillesprojects07-bit.github.io/GTA_10/?v=1016
