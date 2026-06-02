@@ -1,7 +1,7 @@
 {
-  "name": "GTA V10.17",
-  "short_name": "GTA V10.17",
-  "description": "Greek travel app upgraded from the stable V10.16.11 core with category progress counts, clickable Mastered/Needs Review filters, green mastered-category highlights, audio, review stacks, Phrase Builder, and Backup/Restore.",
+  "name": "GTA V10.17.2",
+  "short_name": "GTA V10.17.2",
+  "description": "Greek travel app V10.17.2 with corrected Mastered, Needs Review, and Unmarked category progress for cards, Play Mode, Listen Mode, Match Mode, and Travel Mode while preserving the working V10.16.11 core.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
