@@ -1,14 +1,14 @@
-GTA V10.18.1 — Question Builder Fixed
+GTA V10.18.1 — Version Label Fixed
 
-Repair build from V10.18.
+Repair build from V10.18.1.
 
 FIXED:
-- Restored the missing Question Builder screen/section, which caused the Home button to open an empty view.
-- Question Builder now shows Layer 1 Pattern Builders and Layer 2 Everyday Questions.
-- Category progress and Mastered / Needs Review / Unmarked filters work inside Question Builder.
-- Morning Bakery + Coffee content remains included.
+- Header brand label now correctly shows GREEK TRAVEL APP V10.18.1 instead of V10.17.2.
+- Question Builder fix remains included.
+- Morning Bakery + Coffee remains included.
 - Bakery + Coffee vocabulary remains included.
-- Service worker cache bumped so GitHub loads this repair instead of the broken V10.18 cache.
+- Category progress and Mastered / Needs Review / Unmarked filters remain included.
+- Service worker cache bumped so GitHub loads this corrected label.
 
 Upload all four main files to GitHub:
 - index.html
