@@ -1,7 +1,7 @@
 {
-  "name": "GTA V10.16.11",
-  "short_name": "GTA V10.16.11",
-  "description": "Greek travel app with Listening Review Stack, clean progress counts, Greek text-to-speech audio, verb sets, practical noun patterns, Play Mode, Match Mode, Phrase Builder, Priority Review, Backup/Restore, and storage safety reminders.",
+  "name": "GTA V10.17",
+  "short_name": "GTA V10.17",
+  "description": "Greek travel app upgraded from the stable V10.16.11 core with category progress counts, clickable Mastered/Needs Review filters, green mastered-category highlights, audio, review stacks, Phrase Builder, and Backup/Restore.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

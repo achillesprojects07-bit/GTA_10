@@ -1,32 +1,34 @@
-GTA V10.17 — Category Progress + Completion Highlights
+GTA V10.17 — Category Progress Upgrade
 
-NEW FEATURES:
+Built from the working GTA V10.16.11 audio/play/match base.
 
-1. CATEGORY PROGRESS BADGES (Speak, Vocab, Noun Patterns)
-   The dropdown is replaced with a clickable category list.
-   Each category row shows:
-     ✓ N  — how many cards you have marked Mastered (yellow)
-     ⚑ N  — how many cards marked Needs Review (orange)
-   Tap a category row → see all items in that category.
-   Tap a ✓ badge → see only your Mastered items in that category.
-   Tap a ⚑ badge → see only your Needs Review items in that category.
-   Badges update live whenever you change a card's mark status.
+WHAT IS NEW:
+- Speak, Vocabulary, Verb Sets, and Noun Patterns now show category-level progress when a category is selected.
+- Each selected category shows Total, Mastered, Needs Review, and Unmarked counts.
+- Tapping Mastered, Needs Review, or Unmarked filters the cards inside that exact category.
+- Play Mode categories now show mastered progress and turn green when all activities in that category are mastered with no Play Review items left.
+- Listen Mode categories now show mastered progress and turn green when all listening activities in that category are mastered with no Listening Review items left.
+- Match Mode rounds now show mastered progress and turn green when all pairs in that round are mastered with no Match Review items left.
+- Travel Mode shortcuts now show linked progress and turn green when the connected study set is mastered.
+- Backup/Restore now includes review stacks and completed activity tracking.
 
-2. COMPLETION HIGHLIGHTS (Play, Match, Listen)
-   When you complete a Play game, Match round, or Listen set
-   with ZERO mistakes, the category row turns green with a ✓.
-   Once highlighted, it stays green (saved across sessions).
-   The highlight only applies to the main category sets —
-   not Review Stacks (those reset when cleared).
+PRESERVED FROM V10.16.11:
+- Existing app structure and large-button UX.
+- Greek text-to-speech audio buttons.
+- Mark buttons: Needs Review, Mastered, Unmarked.
+- Listening Review Stack.
+- Play Review Stack.
+- Match Review Stack.
+- Phrase Builder.
+- Existing content structure for Speak, Vocab, Verbs, Noun Patterns, Play, Listen, Match, and Travel.
 
-All previous fixes are included:
-- Mark button fix, content pronunciation cleanup, audio buttons
-  in Play and Match modes.
-
-Upload to GitHub (same filenames):
+UPLOAD TO GITHUB:
+Upload all four main app files with the same filenames:
 - index.html
-- service-worker.js   (CACHE_NAME bumped)
+- service-worker.js
 - manifest.json
 - icon.svg
 
-Fully close and reopen the app after uploading.
+IMPORTANT AFTER UPLOADING:
+The service worker cache name was bumped to gta-v10-17-category-progress.
+After uploading, fully close and reopen the app. If needed, clear the old site cache so GitHub loads the newest version.
