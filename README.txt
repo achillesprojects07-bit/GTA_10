@@ -1,24 +1,25 @@
-GTA V10.16.11 — Mark Button Fix + Content Cleanup
+GTA V10.16.11 — Audio in Play & Match Modes
 
-This build includes two rounds of fixes:
+Adds audio buttons to Play Mode and Match Mode.
+All previous fixes (mark buttons, content cleanup) are included.
 
-1) MARK BUTTON FIX (code)
-   Mastered / Needs Review / Unmarked buttons register and change color again.
-   They had broken after audio was added, because the new speak() function
-   collided with the Speak screen's element id and crashed the re-render.
+WHAT'S NEW:
+- Play Mode MC: a 🔊 Hear Greek button appears when a Greek prompt
+  is shown on the card, so you can hear it before answering.
+- Play Mode correct feedback: 🔊 Hear Greek button appears in the
+  "Correct" panel so you can hear the answer after getting it right.
+  Only fires when the answer is Greek text (not English answers).
+- Match Mode correct feedback: 🔊 Hear Greek button appears in the
+  "Correct match" panel so you can hear the Greek word after matching.
 
-2) CONTENT CLEANUP (data only — no Greek meaning changed)
-   - Pronunciation spelling standardized: the "ch" sound (χ) is now always
-     written "h" (was sometimes "kh"); the "ks" sound (ξ) is now always "ks"
-     (was sometimes "x"). 100+ entries normalized.
-   - Fixed two transcription typos: "fan" (ανεμιστήρας) and the laundromat
-     entry (πλυντήριο).
-   - "Takeaway" standardized to πακέτο everywhere (the word the app's own
-     listening line already uses), instead of mixing it with "για το χέρι".
+HOW IT WORKS:
+These buttons use the same speech engine already in the app.
+If your device has a Greek voice installed, it speaks automatically.
+If no Greek voice is available, the button is hidden.
 
 Upload all four to GitHub, keeping the same filenames:
 - index.html
-- service-worker.js   (CACHE_NAME bumped to force the update)
+- service-worker.js   (CACHE_NAME bumped)
 - manifest.json
 - icon.svg
 
