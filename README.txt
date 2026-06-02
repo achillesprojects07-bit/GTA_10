@@ -1,3 +1,3 @@
-GTA V10.16.5 Clean Progress UX
+GTA V10.16.11 Game Review Stack + Feedback
 
-Built from V10.16.4. Keeps Listening Review Stack and replaces visible XP/streak clutter with useful progress counts: Needs Review, Mastered, Listening Review, and Saved Phrases.
+Adds Play Review Stack and Match Review Stack. Wrong Play/Match answers ask you to try again instead of revealing the answer. Correct answers reveal English + Greek translations. Retains audio coverage and clean progress UX.
