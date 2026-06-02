@@ -1,7 +1,7 @@
 {
-  "name": "GTA V10.20.1",
-  "short_name": "GTA V10.20.1",
-  "description": "Greek travel app with Intensive Category Quizzes, Question Builder, bakery and taverna packs, menu items, desserts, drinks, and Quick Commands / One-Word Survival practice.",
+  "name": "GTA V10.20.2",
+  "short_name": "GTA V10.20.2",
+  "description": "Greek travel app with V10.20 taverna/menu content, completed Quick Commands word bank, and expanded Match Mode coverage for Speak and Vocabulary.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

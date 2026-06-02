@@ -1,33 +1,23 @@
-GTA V10.20.1 — Quick Commands / One-Word Survival
+GTA V10.20.2 — Expanded Match Coverage + Complete Quick Commands
 
-Built on the working V10.20 base.
+Base: V10.20.1 / V10.20 content.
 
-WHAT IS NEW:
-- Adds a practical Speak category: Quick Commands / One-Word Survival.
-- Adds short everyday commands for talking to one person, walking, taxi/car movement, directions, and simple safety words.
-- Includes useful casual commands such as Wait, Stop, Go, Come, Look, Listen, Slowly, Careful, Again, Now, Later, Here, There, Left, Right, Straight, Inside, Outside, Stay here, and Let’s go.
-- Adds polite/formal versions where useful, but keeps the category simple and not too formal.
-- Adds a small Vocabulary category: Quick Direction Words.
-
-PRESERVED FROM V10.20:
-- Daily micro-conversations.
-- Taverna / Restaurant Ordering.
-- Taverna Menu Items, drinks, desserts, and loukoumades.
-- Bakery + Coffee vocabulary including spinach-cheese pie and tsoureki.
-- V10.19 Intensive Category Quiz.
-- V10.18.1 Question Builder.
-- V10.17.2 Mastered / Needs Review / Unmarked progress logic.
-- Audio, Play, Listen, Match, Travel, Priority Review, Backup/Restore.
-
-CACHE:
-- service-worker cache bumped to gta-v10-20-1-quick-commands.
+FIXES / ADDS:
+- Keeps V10.20 taverna, menu items, drinks, desserts, loukoumades, bakery updates, and tsoureki.
+- Keeps V10.20.1 Quick Commands / One-Word Survival in Speak.
+- Completes the Vocabulary category "Quick Direction Words" so it now includes all practical short commands, not only 11 direction words.
+- Expands Match Mode coverage by auto-adding missing Speak and Vocabulary pairs in small 5-pair rounds.
+- Keeps existing Match rounds and adds only missing coverage to avoid duplicate match pairs.
+- Preserves Intensive Category Quiz, Question Builder, progress counts, green mastered highlights, audio, Travel, Play, Listen, Review, and Backup/Restore.
 
 UPLOAD:
-Upload all files to GitHub with the same filenames:
+Upload all four main files to GitHub:
 - index.html
 - service-worker.js
 - manifest.json
 - icon.svg
-- README.txt
 
-After upload, fully close and reopen the app to clear the old cache.
+After upload, fully close and reopen the app so the new cache loads.
+
+CACHE:
+gta-v10-20-2-expanded-match-quick-commands
