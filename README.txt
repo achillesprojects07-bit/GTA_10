@@ -1,26 +1,32 @@
-GTA V10.16.11 — Audio in Play & Match Modes
+GTA V10.17 — Category Progress + Completion Highlights
 
-Adds audio buttons to Play Mode and Match Mode.
-All previous fixes (mark buttons, content cleanup) are included.
+NEW FEATURES:
 
-WHAT'S NEW:
-- Play Mode MC: a 🔊 Hear Greek button appears when a Greek prompt
-  is shown on the card, so you can hear it before answering.
-- Play Mode correct feedback: 🔊 Hear Greek button appears in the
-  "Correct" panel so you can hear the answer after getting it right.
-  Only fires when the answer is Greek text (not English answers).
-- Match Mode correct feedback: 🔊 Hear Greek button appears in the
-  "Correct match" panel so you can hear the Greek word after matching.
+1. CATEGORY PROGRESS BADGES (Speak, Vocab, Noun Patterns)
+   The dropdown is replaced with a clickable category list.
+   Each category row shows:
+     ✓ N  — how many cards you have marked Mastered (yellow)
+     ⚑ N  — how many cards marked Needs Review (orange)
+   Tap a category row → see all items in that category.
+   Tap a ✓ badge → see only your Mastered items in that category.
+   Tap a ⚑ badge → see only your Needs Review items in that category.
+   Badges update live whenever you change a card's mark status.
 
-HOW IT WORKS:
-These buttons use the same speech engine already in the app.
-If your device has a Greek voice installed, it speaks automatically.
-If no Greek voice is available, the button is hidden.
+2. COMPLETION HIGHLIGHTS (Play, Match, Listen)
+   When you complete a Play game, Match round, or Listen set
+   with ZERO mistakes, the category row turns green with a ✓.
+   Once highlighted, it stays green (saved across sessions).
+   The highlight only applies to the main category sets —
+   not Review Stacks (those reset when cleared).
 
-Upload all four to GitHub, keeping the same filenames:
+All previous fixes are included:
+- Mark button fix, content pronunciation cleanup, audio buttons
+  in Play and Match modes.
+
+Upload to GitHub (same filenames):
 - index.html
 - service-worker.js   (CACHE_NAME bumped)
 - manifest.json
 - icon.svg
 
-After uploading, fully close and reopen the app to clear the old cache.
+Fully close and reopen the app after uploading.
