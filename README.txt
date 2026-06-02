@@ -1,3 +1,6 @@
-GTA V10.16.6 Audio Coverage Fix
+GTA V10.16.8 Game Review Stack + Feedback
 
-Built from V10.16.5. Fixes audio coverage for Verb Sets present tense tables, Noun Pattern cards, and Travel Mode shortcuts while retaining the V10.16.5 structure, Listening Review Stack, clean progress UX, Backup/Restore, Play Mode, Match Mode, and Listen Mode.
+Adds Play Review Stack and Match Review Stack. Wrong Play/Match answers ask you to try again instead of revealing the answer. Correct answers reveal English + Greek translations. Retains audio coverage and clean progress UX.
+
+
+V10.16.8: Audio reliability fix. Audio buttons now stay tappable and check for a Greek voice on tap; no English voice fallback is used.
