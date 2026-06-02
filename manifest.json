@@ -1,7 +1,7 @@
 {
-  "name": "GTA V10.18",
-  "short_name": "GTA V10.18",
-  "description": "Greek travel app with clean category progress plus Everyday Question + Pattern Builder, Morning Bakery + Coffee, answer practice, audio, review stacks, and backup/restore.",
+  "name": "GTA V10.18.1",
+  "short_name": "GTA V10.18.1",
+  "description": "Greek travel app V10.18.1 with fixed Question Builder section, pattern builders, everyday question answers, Morning Bakery + Coffee, category progress, audio, and review stacks.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

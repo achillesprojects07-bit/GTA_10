@@ -1,26 +1,19 @@
-GTA V10.18 — Everyday Question + Pattern Builder + Morning Bakery Coffee
+GTA V10.18.1 — Question Builder Fixed
 
-Built from the working GTA V10.17.2 base.
+Repair build from V10.18.
 
-WHAT IS NEW:
-- New Question Builder home button.
-- Two clean layers:
-  1. Pattern Builders: Can I, Can we, Should I, What, Where, What time, I need, I would like, I don’t.
-  2. Everyday Questions: Want/Need, Where/Place, Time, Food/Drinks, Home/Family, Going Out/Movement, Shopping/Errands, Clarify/Understand, Morning Bakery + Coffee.
-- Every card has a practical question/phrase, Greek, pronunciation, audio, and 2 simple answer options.
-- No duplicate cards: one card can belong to a pattern and an everyday situation, but it exists once only.
-- New Vocabulary category: Bakery + Coffee.
-- Progress still uses Mastered / Needs Review / Unmarked.
+FIXED:
+- Restored the missing Question Builder screen/section, which caused the Home button to open an empty view.
+- Question Builder now shows Layer 1 Pattern Builders and Layer 2 Everyday Questions.
+- Category progress and Mastered / Needs Review / Unmarked filters work inside Question Builder.
+- Morning Bakery + Coffee content remains included.
+- Bakery + Coffee vocabulary remains included.
+- Service worker cache bumped so GitHub loads this repair instead of the broken V10.18 cache.
 
-PRESERVED:
-- Working V10.17.2 category progress.
-- Audio buttons.
-- Speak, Vocab, Verb Sets, Noun Patterns, Play, Listen, Match, Travel, Review, Backup/Restore.
-
-UPLOAD TO GITHUB:
+Upload all four main files to GitHub:
 - index.html
-- manifest.json
 - service-worker.js
+- manifest.json
 - icon.svg
 
-After uploading, fully close and reopen the app so the new cache loads.
+After uploading, fully close and reopen the app.
