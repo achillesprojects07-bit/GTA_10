@@ -1,23 +1,26 @@
-GTA V10.20.2 — Expanded Match Coverage + Complete Quick Commands
+GTA V10.20.3 — Audio Fix + Expanded Match Coverage
 
-Base: V10.20.1 / V10.20 content.
+This repair build uses V10.20.2 as the base.
 
-FIXES / ADDS:
-- Keeps V10.20 taverna, menu items, drinks, desserts, loukoumades, bakery updates, and tsoureki.
-- Keeps V10.20.1 Quick Commands / One-Word Survival in Speak.
-- Completes the Vocabulary category "Quick Direction Words" so it now includes all practical short commands, not only 11 direction words.
-- Expands Match Mode coverage by auto-adding missing Speak and Vocabulary pairs in small 5-pair rounds.
-- Keeps existing Match rounds and adds only missing coverage to avoid duplicate match pairs.
-- Preserves Intensive Category Quiz, Question Builder, progress counts, green mastered highlights, audio, Travel, Play, Listen, Review, and Backup/Restore.
+FIXED:
+- Strengthened Greek audio button playback.
+- Audio text is now safely encoded in the button and decoded before speech.
+- Audio buttons now show a short Playing state so you can see the tap registered.
+- Added speechSynthesis resume/cancel handling for mobile browsers.
 
-UPLOAD:
+PRESERVED FROM V10.20.2:
+- Expanded Match coverage.
+- 25 Quick Commands in Speak.
+- 25 Quick Direction Words in Vocabulary.
+- Taverna / Restaurant Ordering.
+- Taverna Menu Items, drinks, desserts, loukoumades.
+- Bakery + Coffee with spinach-cheese pie and tsoureki.
+- Question Builder, Intensive Quiz, progress counts, Backup/Restore.
+
 Upload all four main files to GitHub:
 - index.html
 - service-worker.js
 - manifest.json
 - icon.svg
 
-After upload, fully close and reopen the app so the new cache loads.
-
-CACHE:
-gta-v10-20-2-expanded-match-quick-commands
+After uploading, fully close and reopen the app. If needed, clear the browser cache once so the new service worker loads.
