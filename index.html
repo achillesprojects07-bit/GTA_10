@@ -120,7 +120,7 @@ document.addEventListener('click',function(e){
 });
 
 function mark(id,val){if(val==='clear')delete state.marks[id]; else state.marks[id]=val; save(); renderVisible();}
-function renderVisible(){if(speak.classList.contains('active'))renderSpeak(); if(vocab.classList.contains('active'))renderVocab(); if(verbs.classList.contains('active'))renderVerbs(); if(patterns.classList.contains('active'))renderPatterns(); if(review.classList.contains('active'))renderReview(currentReview||'review');}
+function renderVisible(){if($('speak').classList.contains('active'))renderSpeak(); if($('vocab').classList.contains('active'))renderVocab(); if($('verbs').classList.contains('active'))renderVerbs(); if($('patterns').classList.contains('active'))renderPatterns(); if($('review').classList.contains('active'))renderReview(currentReview||'review');}
 function badge(id){let m=state.marks[id];return m?`<span class="countBadge">${m==='review'?'Needs Review':'Mastered'}</span>`:''}
 function itemClass(id){let m=state.marks[id];return m==='review'?' status-review':m==='mastered'?' status-mastered':''}
 function activeMark(id,val){return state.marks[id]===val?' isActive':''}
