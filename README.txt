@@ -1,29 +1,26 @@
-GTA V10.17.2 — Category Progress Corrected from V10.16.11 Base
+GTA V10.18 — Everyday Question + Pattern Builder + Morning Bakery Coffee
 
-This build returns to the working V10.16.11 app core and adds only the corrected category progress layer.
+Built from the working GTA V10.17.2 base.
 
-WHAT IS CORRECTED:
-- Speak Now, Vocabulary, Verb Sets, and Noun Patterns show category progress counts.
-- Counts use only the learning-status language: Mastered, Needs Review, and Unmarked.
-- Clicking a category status filters that exact category.
-- Play Mode categories are visible and show Mastered / Needs Review / Unmarked.
-- Listen Mode categories show Mastered / Needs Review / Unmarked, not Done / Correct / Review.
-- Match Mode rounds show Mastered / Needs Review / Unmarked.
-- Travel Mode rows show linked Mastered / Needs Review / Unmarked progress.
-- A category turns green only when all items are Mastered and Needs Review + Unmarked are zero.
-- Clearing Listening Review moves missed listening items back to Unmarked and refreshes counts immediately.
+WHAT IS NEW:
+- New Question Builder home button.
+- Two clean layers:
+  1. Pattern Builders: Can I, Can we, Should I, What, Where, What time, I need, I would like, I don’t.
+  2. Everyday Questions: Want/Need, Where/Place, Time, Food/Drinks, Home/Family, Going Out/Movement, Shopping/Errands, Clarify/Understand, Morning Bakery + Coffee.
+- Every card has a practical question/phrase, Greek, pronunciation, audio, and 2 simple answer options.
+- No duplicate cards: one card can belong to a pattern and an everyday situation, but it exists once only.
+- New Vocabulary category: Bakery + Coffee.
+- Progress still uses Mastered / Needs Review / Unmarked.
 
-PRESERVED FROM V10.16.11:
-- Existing app layout and navigation.
-- Existing Greek audio system.
-- Existing Play, Listen, Match, Travel, Review, Phrase Builder, and Backup/Restore structure.
-- Existing Mastered / Needs Review / Unmarked card marking.
+PRESERVED:
+- Working V10.17.2 category progress.
+- Audio buttons.
+- Speak, Vocab, Verb Sets, Noun Patterns, Play, Listen, Match, Travel, Review, Backup/Restore.
 
 UPLOAD TO GITHUB:
 - index.html
-- service-worker.js
 - manifest.json
+- service-worker.js
 - icon.svg
 
-IMPORTANT AFTER UPLOAD:
-Fully close and reopen the app, or clear the browser cache, because the service worker cache has been bumped to gta-v10-17-2-category-progress-corrected.
+After uploading, fully close and reopen the app so the new cache loads.

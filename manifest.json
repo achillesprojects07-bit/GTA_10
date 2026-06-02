@@ -1,7 +1,7 @@
 {
-  "name": "GTA V10.17.2",
-  "short_name": "GTA V10.17.2",
-  "description": "Greek travel app V10.17.2 with corrected Mastered, Needs Review, and Unmarked category progress for cards, Play Mode, Listen Mode, Match Mode, and Travel Mode while preserving the working V10.16.11 core.",
+  "name": "GTA V10.18",
+  "short_name": "GTA V10.18",
+  "description": "Greek travel app with clean category progress plus Everyday Question + Pattern Builder, Morning Bakery + Coffee, answer practice, audio, review stacks, and backup/restore.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
