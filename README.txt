@@ -1,12 +1,22 @@
-GTA V10.16.11 — Mark Button Fix
+GTA V10.16.11 — Mark Button Fix + Content Cleanup
 
-Fix: Mastered / Needs Review / Unmarked buttons now register and change
-color again. They had stopped working after the audio feature was added,
-because the new speak() function collided with the Speak screen's element
-id and crashed the re-render. renderVisible() now resolves screens through
-the $() helper, so audio and the mark buttons work together.
+This build includes two rounds of fixes:
 
-Files to upload to GitHub (replace the existing ones, keep the same names):
+1) MARK BUTTON FIX (code)
+   Mastered / Needs Review / Unmarked buttons register and change color again.
+   They had broken after audio was added, because the new speak() function
+   collided with the Speak screen's element id and crashed the re-render.
+
+2) CONTENT CLEANUP (data only — no Greek meaning changed)
+   - Pronunciation spelling standardized: the "ch" sound (χ) is now always
+     written "h" (was sometimes "kh"); the "ks" sound (ξ) is now always "ks"
+     (was sometimes "x"). 100+ entries normalized.
+   - Fixed two transcription typos: "fan" (ανεμιστήρας) and the laundromat
+     entry (πλυντήριο).
+   - "Takeaway" standardized to πακέτο everywhere (the word the app's own
+     listening line already uses), instead of mixing it with "για το χέρι".
+
+Upload all four to GitHub, keeping the same filenames:
 - index.html
 - service-worker.js   (CACHE_NAME bumped to force the update)
 - manifest.json
