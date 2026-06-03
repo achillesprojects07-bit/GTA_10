@@ -1,7 +1,7 @@
 {
-  "name": "GTA V10.20.3",
-  "short_name": "GTA V10.20.3",
-  "description": "Greek travel app with V10.20.2 expanded Match coverage, Quick Commands, taverna/menu content, and stronger Greek audio button playback.",
+  "name": "GTA V10.21.1",
+  "short_name": "GTA V10.21.1",
+  "description": "Greek travel app with vocabulary memorization clues based on sound hooks, Greek word parts, articles, and natural associations.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
