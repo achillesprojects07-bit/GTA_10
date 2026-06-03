@@ -1,7 +1,7 @@
 {
-  "name": "GTA V10.21.1",
-  "short_name": "GTA V10.21.1",
-  "description": "Greek travel app with vocabulary memorization clues based on sound hooks, Greek word parts, articles, and natural associations.",
+  "name": "GTA V10.21.2",
+  "short_name": "GTA V10.21.2",
+  "description": "Greek travel app with stronger student-style vocabulary memory hooks using sound, image, word chunks, and natural associations for recall.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
