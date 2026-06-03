@@ -1,26 +1,23 @@
-GTA V10.21.2 — Better Vocabulary Memory Hooks
+GTA V10.21.3 — Quick Direction Words + Better Memory Hooks
 
-Base: V10.21.1.
+Repair build based on V10.21.2.
 
-FIXED FROM V10.21.1:
-- Replaced weak memorization notes with stronger student-style memory hooks.
-- Hooks now focus on recall: sound link, image link, word chunking, Greek word parts, and natural associations.
-- Changed the visible label from "Memory clue" to "Memory hook".
-- Avoided pure use-case notes like "menu word" unless no better natural hook is possible.
-
-EXAMPLE STYLE:
-- ψωμί / pso-MEE: “Bread? That is so me.” pso-MEE = bread.
-- φούρνος / FOO-rnos: sounds like furnace/oven. Bakery = ovens.
-- περίμενε / pe-REE-me-ne: peri-minute — wait a minute.
-- λουκουμάδες / loo-koo-MA-thes: “Look who made these honey donuts!”
+FIXED:
+- Restored the full Quick Commands / One-Word Survival Speak category with 25 items.
+- Restored the full Quick Direction Words Vocabulary category with 25 items.
+- Added student-style memory hooks for every Quick Direction Word.
+- Added Quick Direction Words match rounds.
 
 PRESERVED:
-- Audio fix, expanded Match Mode, Question Builder, Intensive Quiz, Taverna/Bakery/Menu content, progress tracking, Backup/Restore.
+- V10.21.2 better vocabulary memory hooks.
+- V10.20.3 audio fix.
+- Taverna, bakery, drinks, desserts, loukoumades, and menu items.
+- Question Builder, Intensive Quiz, progress counts, Match Mode, Travel Mode, Backup/Restore.
 
-UPLOAD FILES:
+Upload all four app files to GitHub:
 - index.html
 - service-worker.js
 - manifest.json
 - icon.svg
 
-After upload, close and reopen the app to clear the old cache.
+After upload, fully close and reopen the app to clear old cached files.
