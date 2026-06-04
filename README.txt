@@ -1,23 +1,28 @@
-GTA V10.21.3 — Quick Direction Words + Better Memory Hooks
+GTA V10.22.1 — Audio Stability Fix
 
-Repair build based on V10.21.2.
+Base: V10.22 Smart Practice Modes.
 
-FIXED:
-- Restored the full Quick Commands / One-Word Survival Speak category with 25 items.
-- Restored the full Quick Direction Words Vocabulary category with 25 items.
-- Added student-style memory hooks for every Quick Direction Word.
-- Added Quick Direction Words match rounds.
+Fixes:
+- Strengthened Greek audio playback for repeated tapping across Speak, Vocab, Listen Mode, Smart Practice, Match feedback, Travel shortcuts, and Question Builder.
+- Audio text is encoded safely for all buttons.
+- Listen Mode Play Audio and Slow buttons now use the same robust audio player.
+- Long phrases are split into smaller speech chunks.
+- Added speech resume keep-alive to reduce mobile/browser speechSynthesis pausing after a few plays.
+- Buttons show Playing while active and reset after playback.
 
-PRESERVED:
-- V10.21.2 better vocabulary memory hooks.
-- V10.20.3 audio fix.
-- Taverna, bakery, drinks, desserts, loukoumades, and menu items.
-- Question Builder, Intensive Quiz, progress counts, Match Mode, Travel Mode, Backup/Restore.
+Preserved:
+- Smart Practice Modes
+- Memory hooks
+- Expanded Match Mode
+- Quick Commands and Quick Direction Words
+- Taverna/Bakery/Drinks/Desserts/Menu content
+- Intensive Category Quiz
+- Progress, Review, Backup/Restore
 
-Upload all four app files to GitHub:
-- index.html
-- service-worker.js
-- manifest.json
-- icon.svg
+Upload all four main files:
+index.html
+service-worker.js
+manifest.json
+icon.svg
 
-After upload, fully close and reopen the app to clear old cached files.
+After upload, fully close and reopen the app. If old audio behavior continues, clear site data/cache once because an old service worker may still be serving the previous file.
