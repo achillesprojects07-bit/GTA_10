@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gta-v10-23-3-speech-feedback-recording';
+const CACHE_NAME = 'gta-v10-23-6-all-vocab-hear-my-voice';
 const FILES_TO_CACHE = ['./','./index.html','./manifest.json','./icon.svg'];
 self.addEventListener('install', event => {event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(FILES_TO_CACHE))); self.skipWaiting();});
 self.addEventListener('activate', event => {event.waitUntil(caches.keys().then(keys => Promise.all(keys.map(key => key !== CACHE_NAME ? caches.delete(key) : null)))); self.clients.claim();});
