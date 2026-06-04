@@ -1,28 +1,28 @@
-GTA V10.22.1 — Audio Stability Fix
+GTA V10.22.2 — Phrase Builder Category + Saved Phrase Audio Fix
 
-Base: V10.22 Smart Practice Modes.
+Base: V10.22.1 Audio Stability Fix.
 
-Fixes:
-- Strengthened Greek audio playback for repeated tapping across Speak, Vocab, Listen Mode, Smart Practice, Match feedback, Travel shortcuts, and Question Builder.
-- Audio text is encoded safely for all buttons.
-- Listen Mode Play Audio and Slow buttons now use the same robust audio player.
-- Long phrases are split into smaller speech chunks.
-- Added speech resume keep-alive to reduce mobile/browser speechSynthesis pausing after a few plays.
-- Buttons show Playing while active and reset after playback.
+WHAT IS FIXED:
+- Phrase Builder category dropdown now has the full practical category list.
+- Category list also pulls from existing Speak categories, Question Builder situations, patterns, and saved personal phrase categories.
+- Saved personal phrases now include a 🔊 Hear saved phrase audio button.
+- Saved phrase audio uses the same strengthened Greek speech system from V10.22.1.
 
-Preserved:
-- Smart Practice Modes
+PRESERVED:
+- Smart Practice modes
+- Audio stability fix
 - Memory hooks
 - Expanded Match Mode
-- Quick Commands and Quick Direction Words
-- Taverna/Bakery/Drinks/Desserts/Menu content
-- Intensive Category Quiz
-- Progress, Review, Backup/Restore
+- Quick Commands / Direction Words
+- Taverna, bakery, drinks, desserts, menu items
+- Intensive Quiz
+- Progress counts
+- Backup / Restore
 
-Upload all four main files:
-index.html
-service-worker.js
-manifest.json
-icon.svg
+UPLOAD ALL FOUR MAIN FILES:
+- index.html
+- service-worker.js
+- manifest.json
+- icon.svg
 
-After upload, fully close and reopen the app. If old audio behavior continues, clear site data/cache once because an old service worker may still be serving the previous file.
+After uploading, fully close and reopen the app so the new service worker cache loads.
