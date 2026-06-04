@@ -1,25 +1,20 @@
-GTA V10.22.2 — Phrase Builder Category + Saved Phrase Audio Fix
+GTA V10.23.1 — Voice Recording + Speech Check
 
-Base: V10.22.1 Audio Stability Fix.
+Built from V10.23 base.
 
-WHAT IS FIXED:
-- Phrase Builder category dropdown now has the full practical category list.
-- Category list also pulls from existing Speak categories, Question Builder situations, patterns, and saved personal phrase categories.
-- Saved personal phrases now include a 🔊 Hear saved phrase audio button.
-- Saved phrase audio uses the same strengthened Greek speech system from V10.22.1.
+WHAT IS NEW:
+- Adds 🧪 Speech Check beside the voice recording controls.
+- Uses browser speech recognition, when available, to listen to your Greek.
+- Compares what the browser heard against the expected Greek phrase.
+- Gives gentle feedback: Good enough, Almost, or Needs practice.
+- Weak matches are added to pronunciation practice / Needs Review.
 
-PRESERVED:
-- Smart Practice modes
-- Audio stability fix
-- Memory hooks
-- Expanded Match Mode
-- Quick Commands / Direction Words
-- Taverna, bakery, drinks, desserts, menu items
-- Intensive Quiz
-- Progress counts
-- Backup / Restore
+NOTES:
+- Speech Check depends on browser support for Greek speech recognition.
+- It is a practical helper, not a perfect pronunciation grader.
+- Voice recording and playback are still included for self-comparison.
 
-UPLOAD ALL FOUR MAIN FILES:
+Upload all four main files to GitHub:
 - index.html
 - service-worker.js
 - manifest.json

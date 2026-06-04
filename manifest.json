@@ -1,7 +1,7 @@
 {
-  "name": "GTA V10.22.2",
-  "short_name": "GTA V10.22.2",
-  "description": "Greek travel app with Smart Practice modes, better vocabulary memory hooks, restored quick direction words, quick commands, expanded match coverage, and audio fixes.",
+  "name": "GTA V10.23.1",
+  "short_name": "GTA V10.23.1",
+  "description": "Greek travel app with Smart Practice modes, better vocabulary memory hooks, restored quick direction words, quick commands, expanded match coverage, and audio fixes, and voice recording pronunciation practice and Speech Check for Greek pronunciation review.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
