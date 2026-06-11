@@ -1,22 +1,13 @@
-GTA V10.23.8 — iPhone App Icon Polish
+GTA Greek V10.24.0 — Fluency Upgrade
 
-WHAT CHANGED:
-- Added iPhone-specific Apple touch icon support.
-- Added PNG app icons: apple-touch-icon.png, icon-192.png, and icon-512.png.
-- Updated the install/home screen short name to GTA Greek so it fits better under the iPhone icon.
-- Updated manifest and service worker cache for the new icons.
-- Preserved all V10.23.7 premium home clarity and V10.23.6 speech feedback features.
+What is new:
+- SRS due-today scheduling that keeps old Mastered / Needs Review marks compatible.
+- Stricter accent-aware speech scoring with Level 0–4 teacher-style feedback.
+- Speak-First Drill: English first, say Greek before reveal, with iOS self-rate fallback.
+- Shadowing Mode: model voice, record yourself, compare, self-rate.
+- Conversations: 10 role-play scenarios including bakery, taverna, family home, partner parents, taxi, pharmacy, market, plans, and Wi-Fi help.
+- Content fixes: takeaway corrected to πακέτο, pronunciation separators normalized, exact duplicate vocab cleanup at runtime.
 
-UPLOAD ALL FILES:
-- index.html
-- service-worker.js
-- manifest.json
-- icon.svg
-- apple-touch-icon.png
-- icon-192.png
-- icon-512.png
+Upload all files to GitHub. If the old app persists on iPhone, delete the Home Screen app and add it again from Safari.
 
-ON IPHONE:
-Open the app in Safari, tap Share, choose Add to Home Screen, then tap Add. If an old icon appears, remove the old home screen shortcut and add it again after uploading this version.
-
-After upload, fully close and reopen the app to load the new cache.
+Files: index.html, manifest.json, service-worker.js, icon.svg, apple-touch-icon.png, icon-192.png, icon-512.png.

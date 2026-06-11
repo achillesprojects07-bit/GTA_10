@@ -1,7 +1,7 @@
 {
-  "name": "GTA V10.23.8",
+  "name": "GTA Greek V10.24.0",
   "short_name": "GTA Greek",
-  "description": "Greek travel app with premium iPhone home screen icon support, Smart Practice modes, memory hooks, speech feedback, expanded match coverage, and audio fixes.",
+  "description": "Greek fluency PWA with SRS, speak-first drills, shadowing, conversations, speech feedback, memory hooks, match mode, and travel practice.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
