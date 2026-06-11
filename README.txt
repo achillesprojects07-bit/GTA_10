@@ -1,3 +1,9 @@
+GTA V10.24.1 — Audio + Play/Listen Repair
+
+Fixes audio stability, restores Hear Greek in Play/Listen feedback, stops intensive quizzes from auto-advancing too fast, and preserves V10.24 fluency features.
+
+Upload all files. Fully close/reopen the installed app after upload.
+
 GTA Greek V10.24.0 — Fluency Upgrade
 
 What is new:
