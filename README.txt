@@ -1,18 +1,24 @@
-GTA V10.24.4 — Smart Practice Hear Greek
+GTA V10.25.0 — Family, Time, Warmth, Open Dialogue Additions
 
-Adds Hear Greek support inside Smart Practice feedback and prompts:
-- Memory Hook Quiz shows the Greek answer and audio after a correct answer.
-- One-Minute Drill plays Greek prompts and Greek answers.
-- Dialogue Builder lets you hear visible Greek lines and correct missing lines.
+Targeted repair/add-on build based on GTA_V10.24.4_smart_practice_completeness.
 
-Preserves V10.24.2 Smart Practice button repair, V10.24.1 audio/play/listen repair, SRS, Speak-First, Shadowing, Conversations, iPhone icons, and all fluency features.
+Preserved from V10.24.4:
+- Smart Practice button repair and Hear Greek support.
+- Smart Practice round completeness.
+- Memory Hook Quiz, Listen & Repeat, Dialogue Builder, Match Mode, Play, Listen, Speak & Check, Hear My Voice, Shadowing, Conversation Simulator, SRS, iPhone icons.
+- Existing Greek audio function and service-worker/offline PWA structure.
 
-Upload all files and fully close/reopen the installed app. If cache sticks, delete and re-add the Home Screen icon.
+New in V10.25.0:
+- Added 77 new phrase cards across Time & Scheduling, Social Warmth, Family & Belonging, and Partner & Intimacy.
+- Added 3 new Partner & Intimacy vocabulary cards with vivid memory clues.
+- Added Shadowing self-coach note: use phone Voice Memos, compare against Greek model audio, then fix stress/speed/vowels.
+- Added 3 open-ended Smart Practice Dialogue Builder scenarios with no multiple-choice answers at first: café owner, older Greek relative, neighbor/work.
+- Added Phrase Builder “My note” field for personal context/memory on saved phrases. Notes save into personal phrase entries and can be edited directly on saved cards.
+- Updated visible version label, manifest name/description, service-worker cache name, and backup filename.
 
+Audit summary after patch:
+- index.html parses as JavaScript through Node syntax check.
+- Required files present: index.html, manifest.json, service-worker.js, README.txt, icons.
+- Version label: V10.25.0.
 
-V10.24.4 — Smart Practice completeness audit/repair
-- Memory Hook Quiz now opens a round list for each category, not only Round 1.
-- Listen & Repeat now opens a round list for each category, not only Round 1.
-- Each round shows item range plus Mastered / Review / Unmarked counts.
-- Round complete screens return to the round list and only show Next round when another round exists.
-- Preserves V10.24.3 Hear Greek in Smart Practice and V10.24.1 audio repair.
+Upload all files and fully close/reopen the installed app. If the old cache sticks, delete and re-add the Home Screen icon.

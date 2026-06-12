@@ -1,7 +1,7 @@
 {
-  "name": "GTA Greek V10.24.4",
+  "name": "GTA Greek V10.25.0",
   "short_name": "GTA Greek",
-  "description": "Greek fluency PWA with SRS, speak-first drills, shadowing, conversations, speech feedback, memory hooks, match mode, and travel practice.",
+  "description": "Greek fluency PWA with SRS, speak-first drills, shadowing self-coaching, open dialogue simulation, personal phrase notes, memory hooks, match mode, and travel practice.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
