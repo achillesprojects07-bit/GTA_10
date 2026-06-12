@@ -1,38 +1,31 @@
-GTA Greek Travel App — V10.28.0 Phase 3
+GTA Greek Travel App — V11.0 Phase 4
 
-Built from latest working build: GTA_V10.27.0_phase2_activity_streak.zip
+Built from V10.28.0 Phase 3 as the final V11 polish patch.
 
-Phase 3 scope only:
-- Added unified Weak Items pool for Speak-First and Shadowing.
-- Weak Items now combine:
-  1. SRS due items,
-  2. normal Needs Review marks,
-  3. Listen Mode Listening Review items,
-  4. Listen Mode items missed 2+ times.
-- Listen Mode misses now track per-item mistake counts in state.listenMistakes.
-- When a Listen Mode item is missed 2+ times, it is added to the SRS queue as a listenweak_* item.
-- Speak-First now shows a Listening Weak badge when an item came from Listen Mode weakness.
-- Listen Mode explanation text now tells the user that repeated misses are added to SRS.
-- Backup/restore now carries listenReview, listenMistakes, and SRS data while remaining backward-compatible with older backups.
+Phase 4 changes:
+- Added lightweight grammar tooltip layer on vocabulary cards.
+- Vocab cards with useful grammar patterns now show a small ? button beside the Greek word.
+- Tapping ? opens a brief modal grammar note.
+- Notes cover article gender, adjective endings, verb endings, family gender pairs, plurals, and fixed short chunks.
+- Grammar layer is non-blocking: cards still render normally even without a matching grammar note.
+- Updated visible app label to V11.0.
+- Updated manifest display name to GTA Greek V11.0.
+- Updated service-worker cache name to gta-v11.
+- Updated backup filename prefix to GTA_V11.
 
-Preserved from V10.27.0:
-- Activity log under gta_activity_log.
-- Study streak under gta_streak.
-- Weekly study rhythm chart.
-- Header flame streak display.
-- Open badge rendering for the three open Dialogue Builder scenarios.
-- Shadowing tip cards with Got it dismissal.
-- Phase 1 content: Expressing Opinions & Agreement, At the Beach & Outdoors, Greek Family Words.
-- Existing Greek audio function.
-- Speak & Check, Hear My Voice, memory hooks, Match Mode, Smart Practice, Listen Mode, SRS, Phrase Builder, and backup/restore.
+Preserved from previous builds:
+- Phase 1 content additions, Shadowing tips, and Open Dialogue Builder badge.
+- Phase 2 activity log, weekly rhythm chart, and streak counter.
+- Phase 3 unified Weak Items pool and Listen Mode to SRS handoff.
+- Speak & Check, Hear My Voice, memory hooks, Match Mode, Smart Practice, Listen Mode, SRS, Phrase Builder notes, backup/restore, audio, and offline PWA support.
 
-Version updates:
-- Visible app label: V10.28.0
-- Manifest name: GTA Greek V10.28.0
-- Service worker cache: gta-v10-28-0-phase3
-- Backup file name: gta-backup-v10-28-0.json
+Audit notes:
+- JavaScript syntax check passed.
+- ZIP integrity check passed.
+- Required files included: index.html, manifest.json, service-worker.js, README.txt, icons.
 
-Audit checklist:
-- ZIP integrity checked.
-- JavaScript syntax checked from embedded script.
-- Required files present.
+Upload instructions:
+1. Upload all files to the same web host folder.
+2. Hard refresh the app after upload.
+3. If installed on iPhone Home Screen, open once online so the new service worker cache can refresh.
+4. Export a backup after confirming the app opens.
