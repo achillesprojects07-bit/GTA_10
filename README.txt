@@ -1,31 +1,30 @@
-GTA Greek Travel App — V11.0 Phase 4
+GTA Greek Travel App — V11.0.2 Dialogue Builder Expansion
 
-Built from V10.28.0 Phase 3 as the final V11 polish patch.
+Built as a targeted patch on top of V11.0.1.
 
-Phase 4 changes:
-- Added lightweight grammar tooltip layer on vocabulary cards.
-- Vocab cards with useful grammar patterns now show a small ? button beside the Greek word.
-- Tapping ? opens a brief modal grammar note.
-- Notes cover article gender, adjective endings, verb endings, family gender pairs, plurals, and fixed short chunks.
-- Grammar layer is non-blocking: cards still render normally even without a matching grammar note.
-- Updated visible app label to V11.0.
-- Updated manifest display name to GTA Greek V11.0.
-- Updated service-worker cache name to gta-v11.
-- Updated backup filename prefix to GTA_V11.
+V11.0.2 changes:
+- Expanded Dialogue Builder from 33 drills to 173 total drills.
+- Added 140 new Dialogue Builder drills:
+  - 104 scripted line-choice drills
+  - 36 open conversation simulations
+- Added deeper practice categories for family home, partner conversation, cafés, tavernas, beaches, shopping, directions, Greek customs, conversation repair, health/comfort, phone/Wi-Fi, social warmth, opinions, and beach family days.
+- Dialogue Builder home now shows total dialogue count and open conversation count.
+- Category cards now show drill count plus open-drill count.
+- Preserved the existing Open badge and de-duplication behavior.
+- Updated visible app label to V11.0.2.
+- Updated manifest display name to GTA Greek V11.0.2.
+- Updated service-worker cache name to gta-v11-0-2.
+- Updated backup filename to GTA_V11_0_2_backup.json.
 
-Preserved from previous builds:
-- Phase 1 content additions, Shadowing tips, and Open Dialogue Builder badge.
-- Phase 2 activity log, weekly rhythm chart, and streak counter.
-- Phase 3 unified Weak Items pool and Listen Mode to SRS handoff.
-- Speak & Check, Hear My Voice, memory hooks, Match Mode, Smart Practice, Listen Mode, SRS, Phrase Builder notes, backup/restore, audio, and offline PWA support.
+Preserved from prior builds:
+- V11.0.1 One-Minute Drill category/round picker and 143 fast rounds.
+- V11.0 grammar tooltips.
+- V10.28 unified Weak Items/SRS/listening integration.
+- V10.27 weekly activity chart and streak counter.
+- V10.26 shadowing tips and V10.25 open dialogues.
+- Existing audio, Speak & Check, Match, Listen, Smart Practice, Phrase Builder notes, backup/restore, and offline PWA behavior.
 
 Audit notes:
 - JavaScript syntax check passed.
 - ZIP integrity check passed.
-- Required files included: index.html, manifest.json, service-worker.js, README.txt, icons.
-
-Upload instructions:
-1. Upload all files to the same web host folder.
-2. Hard refresh the app after upload.
-3. If installed on iPhone Home Screen, open once online so the new service worker cache can refresh.
-4. Export a backup after confirming the app opens.
+- Required files present.
