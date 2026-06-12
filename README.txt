@@ -1,24 +1,26 @@
-GTA V10.25.0 — Family, Time, Warmth, Open Dialogue Additions
+GTA V10.25.1 — Wiring Fix for Shadowing Tips + Open Dialogues
 
-Targeted repair/add-on build based on GTA_V10.24.4_smart_practice_completeness.
+Targeted repair build based on GTA_V10.25.0_family_time_open_dialogues.
 
-Preserved from V10.24.4:
-- Smart Practice button repair and Hear Greek support.
-- Smart Practice round completeness.
-- Memory Hook Quiz, Listen & Repeat, Dialogue Builder, Match Mode, Play, Listen, Speak & Check, Hear My Voice, Shadowing, Conversation Simulator, SRS, iPhone icons.
-- Existing Greek audio function and service-worker/offline PWA structure.
+Purpose:
+- V10.25.0 declared GTA_V1025_CONTENT_ADDITIONS but the app did not explicitly consume it in the working screens.
+- This patch wires the already-existing data into the UI.
+- No new Greek content was added.
 
-New in V10.25.0:
-- Added 77 new phrase cards across Time & Scheduling, Social Warmth, Family & Belonging, and Partner & Intimacy.
-- Added 3 new Partner & Intimacy vocabulary cards with vivid memory clues.
-- Added Shadowing self-coach note: use phone Voice Memos, compare against Greek model audio, then fix stress/speed/vowels.
-- Added 3 open-ended Smart Practice Dialogue Builder scenarios with no multiple-choice answers at first: café owner, older Greek relative, neighbor/work.
-- Added Phrase Builder “My note” field for personal context/memory on saved phrases. Notes save into personal phrase entries and can be edited directly on saved cards.
-- Updated visible version label, manifest name/description, service-worker cache name, and backup filename.
+Preserved:
+- Existing app structure and working logic.
+- Speak & Check, Hear My Voice, Greek audio function, SRS, Smart Practice, Match Mode, Play, Listen, Shadowing, Conversation Simulator, Phrase Builder, Review, Backup, icons, and PWA/offline structure.
 
-Audit summary after patch:
-- index.html parses as JavaScript through Node syntax check.
-- Required files present: index.html, manifest.json, service-worker.js, README.txt, icons.
-- Version label: V10.25.0.
+Changed in V10.25.1:
+- Shadowing now reads GTA_V1025_CONTENT_ADDITIONS.tips and renders the Shadowing tip as a visible instruction card.
+- Dialogue Builder now reads GTA_V1025_CONTENT_ADDITIONS.dialogues and merges those 3 open conversation scenarios into the existing Smart Practice Dialogue Builder list.
+- Added de-duplication by category/title/opening line so the same 3 open conversation scenarios do not appear twice if already present in SMART_DIALOGUES.
+- Updated visible version label, manifest, service-worker cache name, and backup filename.
 
-Upload all files and fully close/reopen the installed app. If the old cache sticks, delete and re-add the Home Screen icon.
+Audit summary:
+- index.html JavaScript syntax check passed.
+- Required files present: index.html, manifest.json, service-worker.js, README.txt, icon.svg, icon-192.png, icon-512.png, apple-touch-icon.png.
+- Confirmed wiring helpers present: consumeV1025Dialogues(), normalizeV1025Dialogue(), and v1025ShadowTipCards().
+- Version label: V10.25.1.
+
+Upload all files, then hard refresh. For the installed iPhone Home Screen app, fully close/reopen it. If the old cache persists, delete and re-add the Home Screen icon.
