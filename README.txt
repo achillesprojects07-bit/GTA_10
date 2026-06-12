@@ -1,22 +1,25 @@
-GTA Greek Travel App — V11.0.2 Dialogue Builder Expansion
+GTA Greek Travel App — V11.0.3 Pronunciation Recording + Learning Path
 
-Built as a targeted patch on top of V11.0.1.
+Built as a targeted patch on top of V11.0.2.
 
-V11.0.2 changes:
-- Expanded Dialogue Builder from 33 drills to 173 total drills.
-- Added 140 new Dialogue Builder drills:
-  - 104 scripted line-choice drills
-  - 36 open conversation simulations
-- Added deeper practice categories for family home, partner conversation, cafés, tavernas, beaches, shopping, directions, Greek customs, conversation repair, health/comfort, phone/Wi-Fi, social warmth, opinions, and beach family days.
-- Dialogue Builder home now shows total dialogue count and open conversation count.
-- Category cards now show drill count plus open-drill count.
-- Preserved the existing Open badge and de-duplication behavior.
-- Updated visible app label to V11.0.2.
-- Updated manifest display name to GTA Greek V11.0.2.
-- Updated service-worker cache name to gta-v11-0-2.
-- Updated backup filename to GTA_V11_0_2_backup.json.
+V11.0.3 changes:
+- Added Shadowing self-recording comparison using the browser MediaRecorder API.
+- Shadowing now has a separate Play model audio button and a Record my voice button.
+- Recording captures a fixed 4-second attempt, then immediately provides playback beside the Greek model.
+- Added pronunciation self-ratings: Stress wrong, Speed wrong, Sounds close.
+- Pronunciation ratings are stored locally in gta_pron_log with item ID, rating, and timestamp.
+- Added a running Shadowing tally for Sounds close ratings in the current session.
+- Added microphone fallback message for unsupported/denied microphone access: use phone Voice Memos beside the model audio.
+- Added a dismissible Where to start learning path on the Home screen.
+- Learning path has 6 stages: Survival phrases, Basic vocabulary, Conversation repair, First drills, Speak out loud, Real conversations.
+- Learning path visited stages are stored in gta_path_visited and dismissal is stored in gta_path_dismissed.
+- Updated visible app label to V11.0.3.
+- Updated manifest display name to GTA Greek V11.0.3.
+- Updated service-worker cache name to gta-v11-0-3.
+- Updated backup filename to GTA_V11_0_3_backup.json.
 
 Preserved from prior builds:
+- V11.0.2 expanded Dialogue Builder with 173 drills.
 - V11.0.1 One-Minute Drill category/round picker and 143 fast rounds.
 - V11.0 grammar tooltips.
 - V10.28 unified Weak Items/SRS/listening integration.
