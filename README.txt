@@ -1,20 +1,17 @@
-GTA Greek Travel App — V11.0.11 Sightseeing Scenario Fix
+GTA Greek Travel App — V11.0.13 Clean Today’s Guide
 
-Built from V11.0.10 visible-version-corrected build.
+Built from V11.0.12 multi-activity guide.
 
-V11.0.11 changes:
-- Added Sightseeing / Museums / Old Town as a Today’s Greek Guide destination.
-- Added Sightsee / visit museum as a Today’s Greek Guide activity.
-- Added scenario matching for museum, Acropolis, old town, church, ruins, tour, ticket, photo, view, walk, entrance, history, and monuments.
-- Added a Try: museum quick scenario button.
-- Added a Sightseeing & Museums phrase/vocab pack for tickets, entrances, opening hours, photos, guided tours, walking, sitting, views, and history.
-- Added Sightseeing & Museums Dialogue drills.
-- Updated visible in-app version labels to V11.0.11.
-- Updated manifest display name, service-worker cache, README, and backup filename to V11.0.11.
+V11.0.13 changes:
+- Removed the quick example buttons from Today’s Greek Guide.
+- Today’s Greek Guide now shows only the form fields and Create My Guide button.
+- Updated visible in-app version labels to V11.0.13.
+- Updated manifest display name, service-worker cache, README, and backup filename to V11.0.13.
 
 Preserved:
-- Today’s Greek Guide Basic / Intermediate / Advanced behavior.
-- Advanced still returns all applicable cards found for the scenario.
+- Multi-place and multi-activity Today’s Greek Guide.
+- Basic / Intermediate / Advanced card expansion.
+- Sightseeing / Museums / Old Town scenario support.
 - Speak Now global search with Search and Clear buttons.
 - Phrase Builder to Speak Now/Vocabulary upgrade.
 - Dialogue Builder expansion.
