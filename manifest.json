@@ -1,7 +1,7 @@
 {
-  "name": "GTA Greek V11.0.8",
-  "short_name": "GTA V11.0.8",
-  "description": "Greek Travel App V11.0.8 — offline Greek learning PWA",
+  "name": "GTA Greek V11.0.9",
+  "short_name": "GTA V11.0.9",
+  "description": "Greek Travel App V11.0.9 — offline Greek learning PWA",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
