@@ -1,20 +1,12 @@
-GTA Greek Travel App — V11.0.13 Clean Today’s Guide
+GTA Greek Travel App — V11.0.15
 
-Built from V11.0.12 multi-activity guide.
+Changes in this build:
+- Added “Remove from this guide” on Today’s Greek Guide cards.
+- Hidden cards are stored locally under gta_today_hidden_cards and stay out of future Today’s Guide results.
+- Added “Show hidden guide cards again” reset button when hidden cards exist.
+- This hides cards only from the Today’s Guide; it does not delete original Speak Now/Vocab/Dialogue data.
+- Preserved V11.0.14 collapsed category UX, phrase/vocab/dialogue grouping, audio, SRS, Speak Now search, and all prior content.
 
-V11.0.13 changes:
-- Removed the quick example buttons from Today’s Greek Guide.
-- Today’s Greek Guide now shows only the form fields and Create My Guide button.
-- Updated visible in-app version labels to V11.0.13.
-- Updated manifest display name, service-worker cache, README, and backup filename to V11.0.13.
-
-Preserved:
-- Multi-place and multi-activity Today’s Greek Guide.
-- Basic / Intermediate / Advanced card expansion.
-- Sightseeing / Museums / Old Town scenario support.
-- Speak Now global search with Search and Clear buttons.
-- Phrase Builder to Speak Now/Vocabulary upgrade.
-- Dialogue Builder expansion.
-- One-Minute Drill completeness.
-- Pronunciation recording in Shadowing.
-- SRS / Weak Items, Listen Mode, Match Mode, Smart Practice, grammar tooltips, audio, and Backup/Restore.
+Audit:
+- JavaScript syntax check passed.
+- ZIP integrity check passed.
