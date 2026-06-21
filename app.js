@@ -1711,5 +1711,87 @@ try{
   window.gtaCreateScenarioGuide=sgCreateGuide;window.renderScenarioGuide=renderScenarioGuide;if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',renderScenarioGuide);else renderScenarioGuide();
 })();
 
+
+// ---------- V11.0.18 Global Quick Search ----------
+(function(){
+  function gqsNorm(v){try{return normSpeakSearchText(v);}catch(e){return String(v||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();}}
+  function gqsText(o){return gqsNorm(JSON.stringify(o||{}));}
+  function gqsWords(q){return gqsNorm(q).split(/[^a-z0-9\u0370-\u03ff]+/).filter(function(x){return x&&x.length>1;});}
+  function gqsEsc(v){try{return esc(v);}catch(e){return String(v||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}}
+  function gqsArg(v){return String(v||'').replace(/'/g,'’');}
+  function gqsMatches(text,q,words){
+    if(!q)return false;
+    if(text.indexOf(q)>-1)return true;
+    return words.length?words.every(function(w){return text.indexOf(w)>-1;}):false;
+  }
+  function gqsKey(item){var d=item.data||{};return item.type+'|'+gqsNorm((d.category||d.cat||d.situation||'')+'|'+(d.english||d.title||'')+'|'+(d.casual||d.formal||d.greek||d.openingGreek||''));}
+  function gqsPools(){
+    var pools=[];
+    var phrases=(typeof allSpeakPhrases==='function'?allSpeakPhrases():(DATA&&DATA.phrases?DATA.phrases:[]));
+    phrases.forEach(function(x,i){pools.push({type:'phrase',label:'Phrases',category:x.category||'Phrases',id:x._id||('p_'+i),data:x,text:gqsText(x)});});
+    var vocab=(typeof allVocabItems==='function'?allVocabItems():(DATA&&DATA.vocab?DATA.vocab:[]));
+    vocab.forEach(function(x,i){pools.push({type:'vocab',label:'Vocabulary',category:x.category||'Vocabulary',id:x._id||('v_'+i),data:x,text:gqsText(x)});});
+    if(typeof SMART_DIALOGUES!=='undefined'){
+      SMART_DIALOGUES.forEach(function(x,i){pools.push({type:(x.open?'open-dialogue':'dialogue'),label:'Dialogues',category:x.cat||'Dialogues',id:'d_'+i,data:x,text:gqsText(x)});});
+    }
+    if(typeof QUESTION_BUILDER!=='undefined'){
+      QUESTION_BUILDER.forEach(function(x,i){pools.push({type:'question',label:'Questions',category:x.situation||x.pattern||'Questions',id:x.id||('q_'+i),data:x,text:gqsText(x)});});
+    }
+    return pools;
+  }
+  function gqsSearch(q){
+    q=gqsNorm(q);var words=gqsWords(q);var seen={};
+    return gqsPools().filter(function(item){return gqsMatches(item.text,q,words);}).filter(function(item){var k=gqsKey(item);if(seen[k])return false;seen[k]=1;return true;});
+  }
+  function gqsTypeOrder(type){if(type==='phrase')return 1;if(type==='vocab')return 2;if(type==='question')return 3;return 4;}
+  function gqsGroup(items){
+    var groups={};
+    items.sort(function(a,b){var t=gqsTypeOrder(a.type)-gqsTypeOrder(b.type);if(t)return t;return String(a.category).localeCompare(String(b.category));});
+    items.forEach(function(item){var key=item.label+'|'+item.category;if(!groups[key])groups[key]={key:key,label:item.label,category:item.category,items:[]};groups[key].items.push(item);});
+    return Object.keys(groups).map(function(k){return groups[k];});
+  }
+  window.gqsJumpSpeak=function(cat,q){try{setSpeakFilter(cat||'All categories',q||'');}catch(e){showView('speak');}};
+  window.gqsJumpVocab=function(cat,q){try{setVocabFilter(cat||'All categories',q||'');}catch(e){showView('vocab');}};
+  window.gqsToggle=function(id){var el=document.getElementById(id);if(!el)return;var open=el.style.display!=='none';el.style.display=open?'none':'grid';var btn=document.querySelector('[data-gqs-target="'+id+'"]');if(btn){var s=btn.querySelector('.gqsOpenText');if(s)s.textContent=open?'Show':'Hide';}};
+  function gqsRenderItem(item){
+    var d=item.data||{};
+    if(item.type==='phrase'){
+      var g=d.casual||d.formal||'';var q=String(d.english||'').split(' ').slice(0,4).join(' ');
+      return '<div class="gqsMini"><div class="label">Phrase · '+gqsEsc(d.category||'')+'</div><b>'+gqsEsc(d.english||'')+'</b><div class="greek">'+gqsEsc(g)+'</div><div class="pron">'+gqsEsc(d.pronCasual||d.pronFormal||'')+'</div>'+audioButton(g,'🔊 Hear')+'<button class="btn" onclick="gqsJumpSpeak(\''+gqsArg(d.category||'All categories')+'\',\''+gqsArg(q)+'\')">Open in Speak Now</button></div>';
+    }
+    if(item.type==='vocab'){
+      var qv=String(d.english||'').split(' ').slice(0,3).join(' ');
+      return '<div class="gqsMini"><div class="label">Vocab · '+gqsEsc(d.category||'')+'</div><b>'+gqsEsc(d.english||'')+'</b><div class="greek">'+gqsEsc(d.greek||'')+'</div><div class="pron">'+gqsEsc(d.pron||'')+'</div>'+audioButton(d.greek||'','🔊 Hear')+'<button class="btn" onclick="gqsJumpVocab(\''+gqsArg(d.category||'All categories')+'\',\''+gqsArg(qv)+'\')">Open in Vocab</button></div>';
+    }
+    if(item.type==='question'){
+      return '<div class="gqsMini"><div class="label">Question · '+gqsEsc(d.situation||d.pattern||'')+'</div><b>'+gqsEsc(d.english||'')+'</b><div class="greek">'+gqsEsc(d.greek||'')+'</div><div class="pron">'+gqsEsc(d.pron||'')+'</div>'+audioButton(d.greek||'','🔊 Hear')+'<button class="btn" onclick="showView(\'questions\')">Open Questions</button></div>';
+    }
+    var greek=d.openingGreek||((d.lines&&d.lines[0]&&d.lines[0].gr)||'');var english=d.english||((d.lines&&d.lines[0]&&d.lines[0].en)||'');
+    return '<div class="gqsMini"><div class="label">'+(item.type==='open-dialogue'?'Open Dialogue':'Dialogue')+' · '+gqsEsc(d.cat||'')+'</div><b>'+gqsEsc(d.title||'')+'</b><div class="greek">'+gqsEsc(greek)+'</div><div class="muted">'+gqsEsc(english)+'</div>'+audioButton(greek,'🔊 Hear')+'<button class="btn" onclick="showView(\'smart\')">Open Dialogue Builder</button></div>';
+  }
+  function gqsRenderGroup(group,idx){
+    var id='gqsGroup_'+idx+'_'+gqsNorm(group.label+'_'+group.category).replace(/[^a-z0-9]+/g,'_');
+    return '<div class="gqsGroup"><button class="gqsGroupBtn" data-gqs-target="'+gqsEsc(id)+'" onclick="gqsToggle(\''+gqsArg(id)+'\')"><span><b>'+gqsEsc(group.category)+'</b><small>'+gqsEsc(group.label)+' · '+group.items.length+' result'+(group.items.length===1?'':'s')+'</small></span><span class="gqsOpenText">Show</span></button><div id="'+gqsEsc(id)+'" class="gqsResultsGrid" style="display:none">'+group.items.map(gqsRenderItem).join('')+'</div></div>';
+  }
+  window.gtaRunQuickSearch=function(){
+    var input=document.getElementById('gtaQuickSearchInput');var out=document.getElementById('gtaQuickSearchResults');if(!input||!out)return;
+    var q=input.value||'';var nq=gqsNorm(q);if(!nq){out.innerHTML='<div class="notice warn">Type a keyword first, like outside, water, ticket, restroom, slow, coffee, or photo.</div>';return;}
+    try{localStorage.setItem('gta_last_quick_search',q);}catch(e){}
+    var items=gqsSearch(q);var groups=gqsGroup(items);
+    out.innerHTML='<div class="notice"><b>Search: '+gqsEsc(q)+'</b><br>'+items.length+' result'+(items.length===1?'':'s')+' found across phrases, vocabulary, questions, and dialogues. Tap a category to open the matching cards.</div>'+(items.length?groups.map(gqsRenderGroup).join(''):'<div class="notice warn">No matching card found. Try one keyword only, like “outside,” “ticket,” “water,” “photo,” or “repeat.”</div>');
+  };
+  window.gtaClearQuickSearch=function(){var input=document.getElementById('gtaQuickSearchInput');var out=document.getElementById('gtaQuickSearchResults');if(input)input.value='';if(out)out.innerHTML='';try{localStorage.removeItem('gta_last_quick_search');}catch(e){}};
+  window.gtaOpenQuickSearch=function(){try{showView('home');}catch(e){}setTimeout(function(){var el=document.getElementById('gtaQuickSearch');var input=document.getElementById('gtaQuickSearchInput');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});if(input)input.focus();},120);};
+  function renderQuickSearch(){
+    var home=document.getElementById('home');if(!home)return;var el=document.getElementById('gtaQuickSearch');
+    if(!el){el=document.createElement('div');el.id='gtaQuickSearch';var hero=home.querySelector('.hero');if(hero&&hero.parentNode===home)home.insertBefore(el,hero.nextSibling);else home.insertBefore(el,home.firstChild);}
+    if(!document.getElementById('gtaQuickSearchStyle')){var st=document.createElement('style');st.id='gtaQuickSearchStyle';st.textContent='#gtaQuickSearch{background:var(--color-background-primary,#fff);border:1px solid var(--color-border-info,#93c5fd);border-radius:var(--border-radius-lg,24px);padding:14px;margin:14px 0;box-shadow:0 12px 28px rgba(15,23,42,.06)}#gtaQuickSearch h3{margin:0 0 4px}.gqsSub{color:var(--color-text-secondary,#64748b);font-size:13px;margin-bottom:10px}.gqsBar{display:grid;grid-template-columns:1fr auto auto;gap:8px}.gqsInput{width:100%;border:1px solid var(--color-border-tertiary,#e5e7eb);border-radius:var(--border-radius-md,16px);padding:12px;background:var(--color-background-secondary,#f8fafc);color:var(--color-text-primary,#0f172a);font:inherit}.gqsResults{margin-top:10px}.gqsGroup{margin-top:8px}.gqsGroupBtn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;text-align:left;border:1px solid var(--color-border-tertiary,#e5e7eb);background:var(--color-background-secondary,#f8fafc);border-radius:var(--border-radius-md,16px);padding:12px 14px;font:inherit;font-weight:900;cursor:pointer}.gqsGroupBtn small{display:block;margin-top:3px;font-size:12px;color:var(--color-text-secondary,#64748b);font-weight:800}.gqsOpenText{white-space:nowrap;border:1px solid var(--color-border-tertiary,#e5e7eb);border-radius:999px;padding:5px 9px;background:var(--color-background-primary,#fff);font-size:12px}.gqsResultsGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-top:10px}.gqsMini{background:var(--color-background-secondary,#f8fafc);border:1px solid var(--color-border-tertiary,#e5e7eb);border-radius:var(--border-radius-md,16px);padding:12px}.gqsMini b{display:block;margin-bottom:6px}.gqsMini .btn{margin-top:8px;width:100%}@media(max-width:560px){.gqsBar{grid-template-columns:1fr}.gqsBar .btn{width:100%}}';document.head.appendChild(st);}
+    var last='';try{last=localStorage.getItem('gta_last_quick_search')||'';}catch(e){}
+    el.innerHTML='<h3>Quick Search</h3><div class="gqsSub">For when you are outside and cannot remember the category. Search one keyword or a short phrase across phrases, vocabulary, questions, and dialogues.</div><div class="gqsBar"><input id="gtaQuickSearchInput" class="gqsInput" placeholder="Search: outside, ticket, water, restroom, slow..." value="'+gqsEsc(last)+'"><button class="btn primary" onclick="gtaRunQuickSearch()">Search</button><button class="btn" onclick="gtaClearQuickSearch()">Clear</button></div><div id="gtaQuickSearchResults" class="gqsResults"></div>';
+    var input=document.getElementById('gtaQuickSearchInput');if(input){input.addEventListener('keydown',function(ev){if(ev.key==='Enter')gtaRunQuickSearch();});}
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',renderQuickSearch);else renderQuickSearch();
+})();
+
 if('serviceWorker' in navigator){navigator.serviceWorker.register('./service-worker.js').catch(()=>{});}setup();
 
