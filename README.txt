@@ -1,43 +1,37 @@
-GTA Greek Travel App — V11.0.21
+GTA Greek Travel App — V11.0.22
 
-Targeted patch: Today’s 5 daily lesson mode.
+Targeted build on top of V11.0.21.
 
-Changes:
-- Added a new Today’s 5 practice mode on the Home screen.
-- Today’s 5 selects 5 priority phrases for the day from existing DATA.phrases.
-- Priority categories: Must Know, Conversation Repair, At Home & Family, Café & Drinks, Restaurant & Dinner, Getting Around.
-- Each phrase uses a 4-step flow:
-  1. Listen — Greek audio plays first, English hidden.
-  2. Guess — choose the English meaning from 3 options.
-  3. Repeat — see Greek, pronunciation, and English together with normal and 0.7× playback.
-  4. Scenario — practice the phrase in a real-life cue.
-- Wrong guesses are sent to weak review with applySrsResult(id, false, 3).
-- Today’s selection is stored in localStorage as gta_today_phrases.
-- Completed phrase IDs for the day are stored in localStorage as gta_today_done and reset by date.
-- Added completion card: Today’s 5 complete, with a Go to Review button that opens Shadowing.
-- Updated visible app version, manifest, service-worker cache, and backup filename to V11.0.21.
-
-Dialogue Builder expansion count correction preserved:
-- Added 140 new Dialogue Builder drills:
-  - 98 scripted line-choice drills
-  - 42 open conversation simulations
+V11.0.22 changes:
+- Added a new Scenarios practice mode.
+- Added a Home tile: Scenarios.
+- Added 10 real-life Greek exchange scenarios:
+  1. Ordering coffee at a Greek café
+  2. Buying bread at a bakery
+  3. Asking for directions on the street
+  4. Telling a taxi driver your destination
+  5. Ordering at a taverna
+  6. Asking someone to speak more slowly
+  7. Saying you do not understand and asking for simpler words
+  8. Asking how much something costs in a shop
+  9. Arriving at a Greek home
+  10. At the beach
+- Scenario view shows chat-style turns with You/Them bubbles.
+- Each turn includes Greek, pronunciation, English meaning, and audio when possible.
+- Added Practice this scenario mode that runs the exchange one turn at a time.
+- Them turns auto-play Greek audio.
+- Your turns show pronunciation first so the learner can speak before revealing the Greek.
+- Updated visible app version, manifest, service-worker cache, and backup filename to V11.0.22.
 
 Preserved:
-- Shadowing Greek-first reveal flow
-- Today’s Greek Guide reset selections
-- Global Quick Search
-- Speak Now search
-- Phrase Builder to Speak/Vocab
-- SRS / Weak Items
-- Listen Mode
-- Match Mode
-- Dialogue Builder expansion
-- Shadowing pronunciation recording
-- Grammar tooltips
-- Backup / Restore
+- Today’s 5 daily lesson.
+- Shadowing Greek-first reveal and recording.
+- Global Quick Search.
+- Today’s Greek Guide.
+- SRS / Weak Items.
+- Speak Now, Vocab, Listen, Match, Smart Practice, Dialogue Builder, Phrase Builder, Backup/Restore.
 
 Audit notes:
 - JavaScript syntax check passed.
 - ZIP integrity check passed.
 - Required files present.
-- Scripted/open count corrected to match actual content (98 scripted, 42 open).
