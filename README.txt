@@ -1,35 +1,26 @@
-GTA Greek Travel App — V11.0.22
+GTA Greek Travel App — V11.0.23
 
-Targeted build on top of V11.0.21.
+Built as a targeted patch on top of V11.0.22.
 
-V11.0.22 changes:
-- Added a new Scenarios practice mode.
-- Added a Home tile: Scenarios.
-- Added 10 real-life Greek exchange scenarios:
-  1. Ordering coffee at a Greek café
-  2. Buying bread at a bakery
-  3. Asking for directions on the street
-  4. Telling a taxi driver your destination
-  5. Ordering at a taverna
-  6. Asking someone to speak more slowly
-  7. Saying you do not understand and asking for simpler words
-  8. Asking how much something costs in a shop
-  9. Arriving at a Greek home
-  10. At the beach
-- Scenario view shows chat-style turns with You/Them bubbles.
-- Each turn includes Greek, pronunciation, English meaning, and audio when possible.
-- Added Practice this scenario mode that runs the exchange one turn at a time.
-- Them turns auto-play Greek audio.
-- Your turns show pronunciation first so the learner can speak before revealing the Greek.
-- Updated visible app version, manifest, service-worker cache, and backup filename to V11.0.22.
+V11.0.23 changes:
+- Upgraded Quick Search into Survival Search Mode.
+- Added a Survival Mode toggle saved in localStorage as gta_survival_mode.
+- Survival Mode shows large, one-hand friendly single-column cards.
+- Survival cards show Greek first, pronunciation, English, a large audio button, and a Needs Review button.
+- Added situation quick-filter buttons: café, restaurant, directions, shopping, home, health, repair.
+- Situation buttons pre-fill the existing Quick Search input and run the existing search logic.
+- Quick Search continues to save the last searched term under gta_last_quick_search and pre-fills it on the next open.
+- Clear button clears the input and results only; the situation quick filters remain available.
+- In Survival Mode, Must Know and Conversation Repair items sort to the top.
+- Updated visible app version, manifest, service-worker cache, and backup filename to V11.0.23.
 
 Preserved:
-- Today’s 5 daily lesson.
-- Shadowing Greek-first reveal and recording.
-- Global Quick Search.
-- Today’s Greek Guide.
-- SRS / Weak Items.
-- Speak Now, Vocab, Listen, Match, Smart Practice, Dialogue Builder, Phrase Builder, Backup/Restore.
+- Existing grouped Quick Search layout when Survival Mode is off.
+- Existing gtaRunQuickSearch(), gtaClearQuickSearch(), and gtaOpenQuickSearch() entry points.
+- Scenarios mode from V11.0.22.
+- Today's 5 from V11.0.21.
+- Greek-first Shadowing from V11.0.20.
+- Today’s Greek Guide, Phrase Builder, SRS/Weak Items, Listen Mode, Match Mode, Smart Practice, audio, backup/restore, and offline PWA behavior.
 
 Audit notes:
 - JavaScript syntax check passed.
