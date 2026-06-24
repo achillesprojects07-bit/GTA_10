@@ -13,6 +13,11 @@ Changes:
 - Existing recording comparison stays available.
 - Updated visible app version, manifest, service-worker cache, and backup filename to V11.0.20.
 
+Dialogue Builder expansion count correction:
+- Added 140 new Dialogue Builder drills:
+  - 98 scripted line-choice drills
+  - 42 open conversation simulations
+
 Preserved:
 - Today’s Greek Guide reset selections
 - Global Quick Search
@@ -25,3 +30,8 @@ Preserved:
 - Shadowing pronunciation recording
 - Grammar tooltips
 - Backup / Restore
+
+Audit notes:
+- Documentation-only README correction.
+- No app code, manifest, service worker, or icons changed.
+- Scripted/open count corrected to match actual content (98 scripted, 42 open).
