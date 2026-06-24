@@ -1,25 +1,27 @@
-GTA Greek Travel App — V11.0.19
+GTA Greek Travel App — V11.0.20
 
-Bugfix build: Today’s Greek Guide reset selections.
+Targeted patch: Shadowing Greek-first reveal flow.
 
 Changes:
-- Added a clear Reset selections button inside Today’s Greek Guide.
-- Reset selections clears the saved Where / Who / What choices for this feature only.
-- Reset selections clears the optional scenario text and result output.
-- The level returns to Basic after reset.
-- New installs/open sessions no longer pre-check Café, Partner, and Eat/order by default.
-- Existing app progress, SRS, marks, phrase builder items, hidden guide cards, pronunciation logs, and Quick Search data are preserved.
-- Updated visible app version, manifest, service-worker cache, and backup filename to V11.0.19.
+- Shadowing now plays the Greek model audio when a card loads.
+- English meaning is hidden until the user taps I know it or Show me.
+- Show me logs rating needed-reveal to gta_pron_log.
+- Session is capped at 10 unified weak items.
+- Progress indicator shows Item X of 10.
+- Added normal-speed and 0.7× slow playback buttons.
+- Mastered / Needs Review ratings advance automatically after 1.2 seconds.
+- Existing recording comparison stays available.
+- Updated visible app version, manifest, service-worker cache, and backup filename to V11.0.20.
 
 Preserved:
+- Today’s Greek Guide reset selections
 - Global Quick Search
-- Multi-activity Today’s Greek Guide
-- Basic/Intermediate/Advanced level behavior
-- Collapsed guide sections
-- Hide/remove guide card behavior
 - Speak Now search
 - Phrase Builder to Speak/Vocab
-- Dialogue Builder expansion
-- One-Minute Drill completeness
 - SRS / Weak Items
-- Audio and offline PWA behavior
+- Listen Mode
+- Match Mode
+- Dialogue Builder expansion
+- Shadowing pronunciation recording
+- Grammar tooltips
+- Backup / Restore
