@@ -1,4 +1,27 @@
-GTA Greek Travel App — V11.0.26 Greek Audio Health Check
+GTA Greek Travel App — V11.0.26 (Greek Audio Health Check) + Structural Hotfix 1
+
+This package is V11.0.26 with one critical layout bug fixed.
+
+HOTFIX 1 change (the only code change vs the original V11.0.26):
+- Closed the <section id="scenarios"> element, which was left open in the
+  original V11.0.26 build.
+- Cause: with that tag missing, every view after Scenarios (Speak, Vocab,
+  Verbs, Patterns, Questions, Smart Practice, Speak-First, Shadowing,
+  Conversations, Play, Listen, Travel, Match, Phrase Builder, Backup/Restore,
+  and Priority Review) was parsed as a child of #scenarios. Because a hidden
+  (.view without .active = display:none) parent hides all of its children,
+  those 16 views rendered as a blank content area when opened. Home, Today's 5,
+  and Scenarios were unaffected.
+- Fix: a single </section> tag was added. No JavaScript, CSS, or content was
+  changed. Section tags now balance (19 open / 19 close) and all views are
+  top-level siblings again.
+- Bumped the service-worker cache name to 'gta-v11-0-26-hotfix1' so existing
+  installs re-cache the corrected index.html instead of serving the old broken
+  copy. (The visible app version, manifest, and backup filename remain
+  V11.0.26.)
+
+----------------------------------------------------------------------
+Original V11.0.26 notes (unchanged):
 
 Built as a targeted audio-safety patch on top of V11.0.25.
 
@@ -19,11 +42,10 @@ Preserved:
 - Scenarios mode from V11.0.22.
 - Today's 5 from V11.0.21.
 - Greek-first Shadowing from V11.0.20.
-- Today’s Greek Guide, Phrase Builder, SRS/Weak Items, Listen Mode, Match Mode, Smart Practice, audio buttons, backup/restore, and offline PWA behavior.
+- Today's Greek Guide, Phrase Builder, SRS/Weak Items, Listen Mode, Match Mode, Smart Practice, audio buttons, backup/restore, and offline PWA behavior.
 
-Audit notes:
-- JavaScript syntax check passed.
-- ZIP integrity check passed.
-- Required files present.
-- app.js duplicate remains removed from the ZIP package.
-- Greek audio health check added without blocking audio playback.
+Files in this package:
+- index.html (fixed)
+- manifest.json
+- service-worker.js (cache name bumped)
+- icon.svg, icon-192.png, icon-512.png, apple-touch-icon.png
