@@ -1,22 +1,22 @@
-GTA Greek Travel App — V11.0.23
+GTA Greek Travel App — V11.0.24
 
-Built as a targeted patch on top of V11.0.22.
+Built as a targeted patch on top of V11.0.23.
 
-V11.0.23 changes:
-- Upgraded Quick Search into Survival Search Mode.
-- Added a Survival Mode toggle saved in localStorage as gta_survival_mode.
-- Survival Mode shows large, one-hand friendly single-column cards.
-- Survival cards show Greek first, pronunciation, English, a large audio button, and a Needs Review button.
-- Added situation quick-filter buttons: café, restaurant, directions, shopping, home, health, repair.
-- Situation buttons pre-fill the existing Quick Search input and run the existing search logic.
-- Quick Search continues to save the last searched term under gta_last_quick_search and pre-fills it on the next open.
-- Clear button clears the input and results only; the situation quick filters remain available.
-- In Survival Mode, Must Know and Conversation Repair items sort to the top.
-- Updated visible app version, manifest, service-worker cache, and backup filename to V11.0.23.
+V11.0.24 changes:
+- Added a compact My Progress card on the Home screen.
+- My Progress shows a 2×2 grid for:
+  - Phrases mastered
+  - Phrases in review
+  - Today’s streak
+  - Lessons completed this week
+- Added a Recently reviewed row showing up to 5 recent Needs Review items.
+- Each recently reviewed item has a Practice button that opens Shadowing.
+- The card updates when returning to Home and after app setup/stats refresh.
+- Kept the existing weekly activity chart and streak counter unchanged.
+- Updated visible app version, manifest, service-worker cache, and backup filename to V11.0.24.
 
 Preserved:
-- Existing grouped Quick Search layout when Survival Mode is off.
-- Existing gtaRunQuickSearch(), gtaClearQuickSearch(), and gtaOpenQuickSearch() entry points.
+- Survival Search Mode from V11.0.23.
 - Scenarios mode from V11.0.22.
 - Today's 5 from V11.0.21.
 - Greek-first Shadowing from V11.0.20.
