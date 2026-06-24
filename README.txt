@@ -1,30 +1,25 @@
-GTA Greek Travel App — V11.0.18
+GTA Greek Travel App — V11.0.19
 
-Bugfix build: Today’s Greek Guide level-respect fix.
+Bugfix build: Today’s Greek Guide reset selections.
 
 Changes:
-- Category expand buttons now explicitly preserve the selected level.
-- Basic sections show only Basic cards when opened.
-- Intermediate sections show only Intermediate cards when opened.
-- Advanced remains the only level that shows all applicable cards.
-- Section buttons now say “Show Basic cards,” “Show Intermediate cards,” or “Show Advanced cards.”
-- Section subtitles show how many applicable cards are being shown for the selected level.
-- The visible app version, manifest, service-worker cache, and backup filename were updated to V11.0.18.
+- Added a clear Reset selections button inside Today’s Greek Guide.
+- Reset selections clears the saved Where / Who / What choices for this feature only.
+- Reset selections clears the optional scenario text and result output.
+- The level returns to Basic after reset.
+- New installs/open sessions no longer pre-check Café, Partner, and Eat/order by default.
+- Existing app progress, SRS, marks, phrase builder items, hidden guide cards, pronunciation logs, and Quick Search data are preserved.
+- Updated visible app version, manifest, service-worker cache, and backup filename to V11.0.19.
 
 Preserved:
+- Global Quick Search
 - Multi-activity Today’s Greek Guide
+- Basic/Intermediate/Advanced level behavior
+- Collapsed guide sections
 - Hide/remove guide card behavior
-- Phrase/vocab/dialogue grouping
-- Speak Now global search
+- Speak Now search
 - Phrase Builder to Speak/Vocab
 - Dialogue Builder expansion
 - One-Minute Drill completeness
 - SRS / Weak Items
 - Audio and offline PWA behavior
-
-
-V11.0.18 quick search patch:
-- Added a visible Quick Search card on Home for keyword search across phrases, vocabulary, questions, and dialogues.
-- Added a header search button that jumps directly to Quick Search.
-- Results are grouped by category and remain collapsed until tapped, to avoid overwhelm.
-- Updated visible version, manifest, service-worker cache, and backup filename to V11.0.18.
