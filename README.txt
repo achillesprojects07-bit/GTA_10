@@ -1,28 +1,33 @@
-GTA Greek Travel App — V11.0.32 Honest Field-Ready Signal
+GTA Greek Travel App — V11.0.33 Am I Ready? Dashboard
 
-Built as a targeted patch on top of V11.0.31.
+Built as a targeted patch on top of V11.0.32.
 
-V11.0.32 changes:
-- Added an honest Field-ready signal so the app no longer treats same-session success as true readiness.
-- Field-ready now means the item was recalled strongly on more than one day.
-- Updated SRS mastery gate: level-4/strong answers must occur across at least 2 unique dates before state.marks[id] becomes mastered/field-ready.
-- Same-session app recognition now appears as Practiced rather than Field-ready.
-- Speech feedback labels now distinguish app recognition from real-world readiness:
-  - App understood you
-  - App clearly understood you
-- My Progress now shows Field-ready count instead of a flattering Mastered count.
-- Home stat label changed from Mastered to Field-ready.
-- Existing SRS scheduling, trip-date focus, durable storage, and backup/restore remain preserved.
+V11.0.33 changes:
+- Added an Am I Ready? trip-readiness dashboard on the Home screen.
+- Shows survival-critical Greek readiness as a percentage using the honest Field-ready signal.
+- Breaks readiness down by practical survival buckets:
+  - Survival basics
+  - Conversation repair
+  - Café + taverna
+  - Getting around
+  - Health + emergency
+  - Phone / Wi-Fi
+  - Family + home
+- Surfaces the biggest readiness gaps.
+- Adds one-tap practice buttons for the weakest area, Due Now, and Today's 5.
+- Uses the saved trip date when available to make the readiness card deadline-aware.
+- Does not change SRS scheduling or Field-ready requirements.
 
 Preserved:
+- V11.0.32 honest Field-ready signal.
 - V11.0.31 trip-date focus and orphan SRS cleanup.
-- V11.0.29 SRS stabilization and Today’s 5 success grading.
+- V11.0.29 SRS stabilization and Today's 5 success grading.
 - V11.0.28 durable storage / IndexedDB auto-backup patch.
-- Greek audio health check, Survival Search, Scenarios, Today’s 5, Today’s Greek Guide, Shadowing recording, Phrase Builder, and all existing content.
+- Greek audio health check, Survival Search, Scenarios, Today's 5, Today's Greek Guide, Shadowing recording, Phrase Builder, and all existing content.
 
 Audit notes:
 - JavaScript syntax check passed.
 - ZIP integrity check passed.
 - <section> count balanced: 19 open / 19 close.
 - app.js is not included.
-- Service-worker cache bumped to gta-v11-0-32-field-ready.
+- Service-worker cache bumped to gta-v11-0-33-readiness-dashboard.
